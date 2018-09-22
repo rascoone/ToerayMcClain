@@ -1,0 +1,26 @@
+img{
+    float:left;
+    height 600px;
+    width:400px;
+    margin:30px;
+}
+embed{
+    float:left;
+    height 600px;
+    width:400px;
+}
+body{
+    background-image:url("https://i.gadgets360cdn.com/large/super-smash-bros-ultimate_1528826934014.jpg?output-quality=80");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+ol{
+   background-color:white; 
+    margin:50px auto;
+    position:absolute;
+    top:710px;
+    padding:50px 50px;
+}
+li{
+    line-height:20px;
+}

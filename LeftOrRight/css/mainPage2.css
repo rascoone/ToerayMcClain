@@ -1,38 +1,82 @@
 
 body{
-    background-color:lightblue;
-
+    background-color:#4eadf5;
+    background-image:url("http://pixelartmaker.com/art/becdd8955dc57eb.png");
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 .border{
+/*
     background-image:url("https://nofilmschool.com/sites/default/files/styles/article_wide/public/left_right.jpg?itok=6qSYlTI3");
     background-repeat:no-repeat;
     background-color:lightblue;
     background-blend-mode:lighten;
-    background-size:80vw 80vh;
-    border:2vw solid steelblue;
-    border-bottom:10vw solid steelblue;
+    background-size:0vw 5vh;
+*/
+/*    border:2vw solid steelblue;*/
+/*    border-bottom:3vw solid steelblue;*/
    /*box-shadow:border-box 2px white;<!-- figure this out */
     width:80vw;
-    height:80vh;
+    height:30vh;
     margin:5vw auto;
 }
-
+.sign{
+    background-image:url("../../imgs/LeftRightArrow_Pixel.png");
+    background-size:80vw 45vh;
+    background-repeat:no-repeat;
+     background-color:#4eadf5; 
+    background-blend-mode:lighten;
+    position:absolute;
+    background-position:left;
+    width:80vw;
+    height:40vh;
+    top:23vw;
+	border-bottom: 5px solid white;
+/*    margin:5vw auto;*/
+    z-index:-5;
+}
 .text{
-    font-size:5vw;
-   color:blue;
+    font-size:7vw;
+    font-family: 'VT323', monospace;
+   color:black;
     position:relative;
-    margin:5vh 20vw;
+    margin:5vh 21vw;
+    text-shadow:3px 2px lightskyblue;
+    
 }
 #prompts{
-   color:blue;
+    color:black;
+    text-decoration-color:black;
     font-size:2vw;
     position:relative;
+    
  
 }
 .prompt{
+    background-color:#69baf7;
+    color:black;
 	margin:1vh 5vw;
 	font-size:3vw;
+	border:3px solid white;
+	box-shadow:15px 15px #3d6690;
+    padding:10px 10px;
 }
+#myButton{
+    position:absolute;
+    left:1vw;
+    top:1vh;
+    border:2px solid #4eadf5;
+	 padding:15px 32px; 
+	display:inline-block;
+	background-color:white;
+    z-index:20;
+	font-size:24px;
+	color:#4eadf5;
+}
+#myButton:hover{
+	cursor:grab;
+}
+/*
 #prompt1{
 	
    color:blue;
@@ -42,32 +86,84 @@ body{
 }
 #promtp2{
 	font-size:5vw;
-   color:blue;
     position:relative;
     margin:5vh 20vw;
 }
-#full-size{
-	float:left;
-	width:500px;
-	height:400px;
-	margin:10opx;
-	background-size:contain;
-}
+*/
+
 
 .left{
     width:30vw;
-    height:15vh;
+    height:40vh;
     position:relative;
-    top:-5vh;
-    left:5vw;
+    top:0vh;
+    left:10vw;
+    opacity:0;
 }
-
+.lefty{
+    width:30vw;
+    height:40vh;
+    position:absolute;
+    top:40vh;
+    left:10vw;
+    opacity:0;
+}
+.left:hover{
+    cursor:pointer;
+}
+.lefty:hover{
+    cursor:pointer;
+}
 .right{
     width:25vw;
-    height:20vh;
+    height:40vh;
     position:relative;
-     top:-1vh;
-    left:20vw;
+     top:0vh;
+    left:30vw;
+    opacity:0;
+}
+.righty{
+    width:25vw;
+    height:40vh;
+    position:absolute;
+     top:40vh;
+    left:60vw;
+    opacity:0;
+}
+.righty:hover{
+    cursor: pointer;
+}
+.right:hover{
+    cursor: pointer;
+}
+.secret{
+    width:20vw;
+    height:10vh;
+    z-index:25;
+    position:absolute;
+    top:61vh;
+    left:40vw;
+    opacity:0;
+    transition:opacity 3s ease;
+}
+.secret:hover{
+    cursor:progress;
+    opacity:1;
+    transition:opacity 10s ease;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite; 
 }
 
-
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
