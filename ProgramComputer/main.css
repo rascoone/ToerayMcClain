@@ -1,26 +1,86 @@
-img{
+.orbs{
     float:left;
+    position:absolute;
     height 600px;
     width:400px;
     margin:20px;
+    top:550px;
+     z-index:5;
+    opacity:1;
+    transition:opacity 1s ease;
 }
-embed{
-    float:left;
-    height 600px;
-    width:400px;
+
+#toeray{
+    top:450px;
+}
+#gina{
+    left:450px;
+}
+#kate{
+    left:880px;
 }
 body{
+/*
     background-image:url("https://i.gadgets360cdn.com/large/super-smash-bros-ultimate_1528826934014.jpg?output-quality=80");
     background-repeat:no-repeat;
     background-size:cover;
+    background-position:absolute;
+    top:500;
+*/
 }
 ol{
-   background-color:white; 
+/*   background-color:white; */
     margin:50px auto;
     position:absolute;
-    top:710px;
+    top:0px;
     padding:50px 50px;
 }
 li{
     line-height:20px;
+    position:relative;
+}
+
+p{
+    position:absolute;
+    z-index:7;
+    font-size:70px;
+    top:760px;
+    color:white;
+    }
+.t{
+    left:120px;
+      opacity:0;
+    transition:opacity .5s ease;
+}
+.t:hover{
+        opacity:1;
+    transition:opacity .5s ease;
+    }
+.g{
+    left:600px;
+      opacity:0;
+    transition:opacity .5s ease;
+}
+.g:hover{
+        opacity:1;
+    transition:opacity .5s ease;
+    }
+.k{
+    left:1050px;
+        opacity:0;
+    transition:opacity .5s ease;
+}
+.k:hover{
+        opacity:1;
+    transition:opacity .5s ease;
+    }
+.smash{
+    z-index:-5;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:510px;
+    left:0;
+    background-color:white;
+    opacity:.7;
 }
