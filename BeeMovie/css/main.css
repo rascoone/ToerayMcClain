@@ -133,7 +133,7 @@ h1{
 /*IM PICKING UP*/
 .brightbody{
     background-color:black;
-    transition:background-color 2s ease;
+/*    transition:background-color 2s ease;*/
 }
 .brightbody:hover{
     background-color:yellow;
@@ -285,4 +285,106 @@ h1{
     top:60%;
     left:55%;
     font-family: 'Slackey', cursive;
+}
+/*I DONT REMEMBER*/
+.rememberbody{
+    background-image: url("https://s4827.pcdn.co/wp-content/uploads/2016/07/instagram_gradient_wallpaper_mac.jpg");
+    background-position:center;
+}
+.sunback{
+    position:fixed;
+    z-index:-1;
+    height:100%;
+    width:50%;
+    top:22;
+    left:25%;
+}
+.idontremember{
+    top:0;
+    left:28%;
+}
+.sun{
+    top:25%;
+    left:43%;
+    font-family: 'Cabin Sketch', cursive;
+    z-index:3;
+}
+.havinga{
+    top:25%;
+    left:30%;
+}
+.big{
+    top:30%;
+    left:50%;
+    font-size: 200px;
+    font-family: 'Anton', sans-serif;
+}
+.sevenfive{
+    top:18%;
+    left:35%;
+    font-size:200px;
+}
+.idontremember_on{
+    top:65%;
+    left:50%; 
+    font-family: 'Anton', sans-serif;
+    z-index:3;
+}
+.idontremember_it{
+    top:57%;
+    left:57%;
+}
+/*I COULD FEEL*/
+.hotbody{
+    background-color:aliceblue;
+  backface-visibility: hidden;
+
+}
+.flameback{
+    position:fixed;
+    top:10%;
+    left:30%;
+    z-index:-5;
+    opacity:.15;
+}
+.fireback{
+     position:fixed;
+    top:50%;
+    left:39%;
+    z-index:-1;
+    opacity:0;
+}
+.icould{
+    top:10%;
+    left:39%;
+    font-family: 'Bungee Inline', sans-serif;
+}
+.feel{
+    top:35%;
+    left:45%;
+    font-family: 'Anton', sans-serif;
+}
+.itgetting{
+    top:39%;
+    left:32.5%;
+    font-family: 'Bungee Inline', sans-serif;
+    z-index:-2;
+}
+.hotter{
+    top:65%;
+    left:42.5%;
+    font-family: 'Anton', sans-serif;
+    z-index:-1;
+}
+/*
+.hotter:hover .flameback{
+    opacity:1;
+    transition:opacity 2s ease;
+    z-index:5;   
+}
+*/
+.hotter:hover .fireback{
+    opacity:1;
+    transition:opacity 2s ease;
+    z-index:-1;   
 }
