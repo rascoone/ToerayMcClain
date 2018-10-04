@@ -1,11 +1,13 @@
+/*<link rel="stylesheet" type="text/css" href="../css/main.css">*/
+/*<link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline" rel="stylesheet">*/
 p{
     z-index:1;
-    position:absolute;
+    position:fixed;
     font-size:70px;
 }
 a{
     z-index:1;
-    position:absolute;
+    position:fixed;
     font-size:70px;
       text-decoration: none;
 }
@@ -52,34 +54,106 @@ body{
 h1{
     font-size:70px;
 }
-/*POUNDTHOSEPETUNIAS*/
+/*POUND THOSE PETUNIAS*/
 .poundbody{
-/*    background-color:skyblue;*/
-}
-.petuniaback{
-    background-image:url(../imgs/petunia.png");
-    position:absolute;
-    height:20vh;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index:-1;
+    background-color:skyblue;
     
 }
+.petuniaback{
+    position:absolute;
+    z-index:-1;
+    height:65%;
+    width:40%;
+    top:2%;
+    left:33%;
+}
+.stemback{
+    position:fixed;
+    z-index:-2;
+    height:75%;
+    width:50%;
+    top:35%;
+    left:25%;
+}
 .pound{
-    top:20%;
-    left:40%;
+    top:5%;
+    left:41%;
+    font-family: 'Anton', sans-serif;
 }
 .petunias{
-    top:35%;
-    left:43%;
+    top:32%;
+    left:40%;
+    font-family: 'Charmonman', cursive;
 }
 .striped{
-    top:35%;
-    left:40%;
+    top:40%;
+    left:41%;
+    font-family: 'Anton', sans-serif;
 }
 .stem-suckers{
-    top:50%;
-    left:39%;
+    top:68%;
+    left:35%;
+    font-family: 'Charmonman', cursive;
+}
+/*ALL OF YOU*/
+
+.drainbody{
+    background-color:black;
+}
+.drainback{
+    position:fixed;
+    z-index:-1;
+    height:125%;
+    width:100%;
+    top:10%;
+}
+.allof{
+    left:50%;
+    top:-10%;
+    color:white;
+}
+.allofyou_you{
+    left:52%;
+    top:10%;
+    font-family: 'Anton', sans-serif;
+}
+.drain{
+    font-family: 'Cabin Sketch', sans-serif;
+}
+.allofyou_those{
+    left:75%;
+    top:40%;
+    color:white;
+}
+.flowers{
+    left:76%;
+    top:60%;
+    font-family: 'Anton', sans-serif;
+}
+/*IM PICKING UP*/
+.brightbody{
+    background-color:black;
+    transition:background-color 2s ease;
+}
+.brightbody:hover{
+    background-color:yellow;
+    transition:background-color 1s ease;
+}
+.picking{
+    top:5%;
+    left:35%;
+}
+.up{
+    top:25%;
+    left:35%;
+    font-family: 'Anton', sans-serif;
+}
+.alotof{
+    top:25%;
+    left:35%;
+}
+.bright{
+    top:45%;
+    left:35%;
+    font-family: 'Anton', sans-serif;
 }
