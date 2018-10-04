@@ -1,5 +1,5 @@
 /*<link rel="stylesheet" type="text/css" href="../css/main.css">*/
-/*<link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline" rel="stylesheet">*/
+/*<link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline|Faster+One|Slackey" rel="stylesheet">*/
 p{
     z-index:1;
     position:fixed;
@@ -60,7 +60,7 @@ h1{
     
 }
 .petuniaback{
-    position:absolute;
+    position:fixed;
     z-index:-1;
     height:65%;
     width:40%;
@@ -156,4 +156,133 @@ h1{
     top:45%;
     left:35%;
     font-family: 'Anton', sans-serif;
+}
+/*ONE OF THESE*/
+.movebody{
+    background-color:saddlebrown;
+}
+.moveflowerback{
+    position:fixed;
+     top:0;
+    left:45%;
+    width:50%;
+    height:100%;
+        z-index:-1;
+}
+.oneofthese{
+    top:5%;
+    left:30%;
+    color:rosybrown;
+}
+.oneofthese_flowers{
+    top:28%;
+    left:37.5%;
+    font-family: 'Anton', sans-serif;
+}
+.seems{
+    top:42%;
+    left:41.5%;
+    font-family: 'Anton', sans-serif;
+}
+.tobeon{
+    top:45%;
+    left:30%;
+    color:rosybrown;
+}
+.move{
+    top:68%;
+    left:37%;
+    font-family: 'Faster One', sans-serif;
+}
+/*YOU ARE WAY*/
+.positionbody{
+    background-color:#d6ce4f;
+}
+.youareway_you{
+    top:25%;
+    left:10%;
+    font-family: 'Anton', sans-serif;
+}
+.areway{
+    top:17%;
+    left:19%;
+}
+.youareway_out{
+    top:25%;
+    left:37%;
+    font-family: 'Anton', sans-serif;
+}
+.youareway_of{
+    top:17%;
+    left:45%;
+}
+.position{
+    top:50%;
+    left:52%;
+    font-family: 'Anton', sans-serif;
+    height:700px;
+}
+.position:hover{
+    animation: position 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+}
+@keyframes position {
+  from { top: 50%}
+  to   { top: 25%}
+}
+.rookie{
+    top:17%;
+    left:68.5%;
+}
+/*NECTAR PACK CHECK*/
+.nectarbody{
+    background-color:lightgoldenrodyellow;
+}
+.checkback{
+    position:fixed;
+    z-index:-1;
+    top:15%;
+    left:25%;
+    height:75%;
+    width:25%;
+}
+.checkboxback{
+    position:fixed;
+    height:400px;
+    width:400px;
+    top:25%;
+    left:20%;
+    border:5px solid black;
+    z-index:-2;
+}
+.nectar{
+/*
+  top:45%;
+  left:34%;
+    transform:rotate(-60deg);
+*/
+    top:40%;
+    left:55%;
+    font-family: 'Slackey', cursive;
+}
+.pack{
+/*
+   top:1%;
+  left:48%;
+    transform:rotate(-50deg); 
+*/
+    top:40%;
+    left:55%;
+    font-family: 'Slackey', cursive;
+}
+.nectarpackcheck_check{
+/*
+    top:45%;
+  left:46%;
+    transform:rotate(-60deg);
+*/
+    top:60%;
+    left:55%;
+    font-family: 'Slackey', cursive;
 }
