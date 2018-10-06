@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
+   <head>
     <title>Bee Sharp</title>
-    <style>
-    
-    </style>
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline|Faster+One" rel="stylesheet">
+    </head>
     <body>
-        <a href="../blackandyellow/index.html">back to beginning</a>
+        <a href="../blackandyellow/index.html">YOU LIKE JAZZ?</a>
+        <video autoplay loop id="myVideo">
+  <source src="../imgs/youlikejazz.webm" type="video/mp4">
+</video>
+        <script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+</script>
     </body>
 
 </html>

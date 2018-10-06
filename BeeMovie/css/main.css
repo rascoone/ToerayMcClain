@@ -607,3 +607,264 @@ h1{
     opacity:1;
     transition:opacity 2s ease;
 }
+/*OOOMING IN AT*/
+.bullseyeback{
+    position:fixed;
+    z-index:-1;
+    height:50%;
+    width:22%;
+    top:50%;
+    left:20%;
+}
+.oooming{
+    top:0%;
+    left:39%;
+}
+.ooominginat_in{
+    top:21%;
+    left:32%;
+}
+.ooominginat_at{
+    top:12%;
+    left:37%;
+}
+.ooominginat_you{
+    top:21%;
+    left:42%;
+}
+.ooominginat_like{
+    top:21%;
+    left:51%;
+}
+.ooominginat_a{
+    top:13%;
+    left:60%;
+}
+.missle{
+    top:35%;
+    left:40%;
+}
+.missle:hover .fastmissle{
+    animation:movemissle 1s;
+    animation-delay:1s;
+     animation-fill-mode: forwards;
+}
+.missle:hover .bullseyeback{
+    animation:knockover .5s;
+    animation-delay:1.15s;
+     animation-fill-mode: forwards;
+}
+.fastmissle{
+      font-family: 'Faster One', cursive;
+    color:blue;
+    left:-40%;
+    
+}
+.bigredbutton{
+    position:fixed;
+    z-index:-2;
+    height:40%;
+    width:15%;
+    top:30%;
+    left:40%;
+    opacity:0;
+}
+.oomingbody{
+    background-color:lightgreen;
+}
+@keyframes movemissle{
+    from { left:-20%;}
+    to{ left:200%;}
+}
+@keyframes knockover{
+    from { left:40%; top:50%; transform:rotate(0deg);}
+    to { left:50%; top:60%; transform:rotate(130deg);}
+}
+/*YOU READY FOR*/
+.target{
+    position:fixed;
+    z-index:-1;
+    height:50%;
+    width:25%;
+    top:25%;
+    left:35%;
+}
+.youreadyfor_you{
+    top:10%;
+    left:43.8%;
+}
+.ready{
+    top:30%;
+    left:15%;
+}
+.hot{
+    top:38%;
+    left:70%;
+}
+.shot{
+    top:74%;
+    left:42.6%;
+}
+.dart{
+    position:fixed;
+    top:-100%;
+    left:-100%;
+    animation:dart .2s;
+    animation-delay:3s;
+    animation-fill-mode:forwards;
+}
+.youreadyfor_ready{
+    top:38%;
+    left:14%;
+}
+@keyframes dart{
+    from{ top:-100%; left:-30%; width:40%; height:90%; }
+    to{ top:25%; left:35%; width:10%; height:20%;}
+}
+/*I PREDICTED GLOBAL*/
+.globalbody{
+    background-color:mediumpurple;
+}
+.sunflower{
+    position:fixed;
+    z-index:-1;
+    height:100%;
+    width:50%;
+    top:0%;
+    left:25%;
+    transform-origin:center center center;
+}
+.sunrays{
+    position:fixed;
+    z-index:-2;
+    height:100%;
+    width:100%;
+    top:0%;
+    left:2%;
+    opacity:.7;
+}
+.ipredictedglobal_i{
+    top:0%;
+    left:40%;
+    z-index:3;
+}
+.predicted{
+    top:9%;
+    left:45%;
+    z-index:3;
+}
+.global{
+   top:37%;
+    left:43%;
+}
+.global:hover .sunflower{
+    animation:spin 2s infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+.warming{
+   top:47%;
+    left:41%;
+}
+.sunrays{
+    animation:spin 2s infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*KNOCKING SOMEONE OUT*/
+.knockingbody{
+    background-color:burlywood;
+}
+.knocking{
+    top:10%;
+    left:30%;
+}
+.knockout{
+    top:30%;
+    left:37%;
+}
+.knockingout{
+    position:fixed;
+    width:100px;
+    height:100px;
+    top:32%;
+    left:36.7%;
+}
+.knockingouttwo{
+    position:fixed;
+    width:360px;
+    height:100px;
+    top:41%;
+    left:36.7%;
+}
+.knockingout:hover >.knockout{
+    animation:knockout 2s;
+     animation-fill-mode:forwards;
+}
+.knockingout:hover >.special{
+    animation:knockedout 2s;
+    animation-fill-mode:forwards;
+}
+.isalso{
+   top:22%;
+    left:45%;
+}
+.special{
+    top:42%;
+    left:37%;
+}
+@keyframes knockout{
+    0%{top:10%;}
+    40%{ top:0%;}
+    80%{top:0%;}
+    97%{ top:40%;}
+    100%{ top:30%;}
+}
+@keyframes knockedout{
+    0%{top:42%;}
+    40%{top:42%; }
+    80%{top:42%;}
+    90%{ top:42%; transform: rotate(0deg);}
+    100%{ top:200%; transform: rotate(-180deg);}
+}
+/*YOU LIKE JAZZ*/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
