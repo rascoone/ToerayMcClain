@@ -1,5 +1,5 @@
 /*<link rel="stylesheet" type="text/css" href="../css/main.css">*/
-/*<link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline|Faster+One|Slackey" rel="stylesheet">*/
+/*<link href="https://fonts.googleapis.com/css?family=Anton|Fredoka+One|Charmonman|Monoton|Cabin+Sketch|Bungee+Inline|Faster+One" rel="stylesheet">*/
 p{
     z-index:1;
     position:fixed;
@@ -10,6 +10,11 @@ a{
     position:fixed;
     font-size:70px;
       text-decoration: none;
+    font-family: 'Anton', sans-serif;
+    color:darkblue;
+}
+a:hover{
+    color:#dcde47;
 }
 body{
     height:100%;
@@ -17,7 +22,7 @@ body{
 
 /*BLACK AND YELLOW*/
 .yellowback{
-    background-color:yellow;
+    background-color:#dcde47;
     width:100%;
     height:100vh;
     top:0;
@@ -34,7 +39,7 @@ body{
     position:absolute;
     top:50%;
     left:20%;
-    color:yellow;
+    color:#dcde47;
     font-family: 'Anton', sans-serif;
 }
 .and{
@@ -50,6 +55,9 @@ body{
     left:70%;
     color:black;
     font-family: 'Anton', sans-serif;
+}
+.yellow:hover{
+    color:black;
 }
 h1{
     font-size:70px;
@@ -78,22 +86,18 @@ h1{
 .pound{
     top:5%;
     left:41%;
-    font-family: 'Anton', sans-serif;
 }
 .petunias{
     top:32%;
-    left:40%;
-    font-family: 'Charmonman', cursive;
+    left:44%;
 }
 .striped{
     top:40%;
     left:41%;
-    font-family: 'Anton', sans-serif;
 }
 .stem-suckers{
     top:68%;
-    left:35%;
-    font-family: 'Charmonman', cursive;
+    left:38%;
 }
 /*ALL OF YOU*/
 
@@ -162,12 +166,26 @@ h1{
     background-color:saddlebrown;
 }
 .moveflowerback{
+    opacity:1;
     position:fixed;
      top:0;
     left:45%;
     width:50%;
     height:100%;
-        z-index:-1;
+    z-index:-1;
+}
+
+ .move:hover .moveflowerback{
+    animation: moveflower 4s;
+    animation-timing-function:ease-in-out;
+    animation-direction:alternate-reverse;
+    animation-fill-mode:forwards;
+     animation-iteration-count: infinite;
+}
+@keyframes moveflower {
+    from { left:-10% }
+    to { left:45%}
+   
 }
 .oneofthese{
     top:5%;
@@ -191,9 +209,10 @@ h1{
 }
 .move{
     top:68%;
-    left:37%;
-    font-family: 'Faster One', sans-serif;
+    left:43%;
+    z-index:-1;
 }
+
 /*YOU ARE WAY*/
 .positionbody{
     background-color:#d6ce4f;
@@ -264,7 +283,6 @@ h1{
 */
     top:40%;
     left:55%;
-    font-family: 'Slackey', cursive;
 }
 .pack{
 /*
@@ -274,7 +292,6 @@ h1{
 */
     top:40%;
     left:55%;
-    font-family: 'Slackey', cursive;
 }
 .nectarpackcheck_check{
 /*
@@ -284,7 +301,6 @@ h1{
 */
     top:60%;
     left:55%;
-    font-family: 'Slackey', cursive;
 }
 /*I DONT REMEMBER*/
 .rememberbody{
@@ -304,9 +320,8 @@ h1{
     left:28%;
 }
 .sun{
-    top:25%;
-    left:43%;
-    font-family: 'Cabin Sketch', cursive;
+    top:23%;
+    left:44%;
     z-index:3;
 }
 .havinga{
@@ -320,7 +335,7 @@ h1{
     font-family: 'Anton', sans-serif;
 }
 .sevenfive{
-    top:18%;
+    top:20%;
     left:35%;
     font-size:200px;
 }
@@ -355,25 +370,21 @@ h1{
     opacity:0;
 }
 .icould{
-    top:10%;
-    left:39%;
-    font-family: 'Bungee Inline', sans-serif;
+    top:15%;
+    left:42%;
 }
 .feel{
     top:35%;
     left:45%;
-    font-family: 'Anton', sans-serif;
 }
 .itgetting{
-    top:39%;
-    left:32.5%;
-    font-family: 'Bungee Inline', sans-serif;
+    top:44%;
+    left:40%;
     z-index:-2;
 }
 .hotter{
     top:65%;
     left:42.5%;
-    font-family: 'Anton', sans-serif;
     z-index:-1;
 }
 /*
@@ -387,4 +398,212 @@ h1{
     opacity:1;
     transition:opacity 2s ease;
     z-index:-1;   
+}
+/*YOU SEE*/
+.eyeback{
+    position:absolute;
+    top:10%;
+    left:15%;
+    height:60%;
+    width:70%;
+    z-index:-2;
+}
+#blink{
+    opacity:0;
+    z-index:-1;
+}
+#blink:hover{
+    opacity:1;
+    transition:opacity .5 linear;
+}
+.yousee_you{
+  top:30%;
+   left: 32%;
+    font-size:100px;
+}
+.yousee_see{
+   top:30%;
+   left: 57%;
+    font-size:100px; 
+}
+/*NOT LIKE A*/
+.rulerbody{
+    background-color:#b9b96b;
+}
+.rulerback{
+    position:fixed;
+    top:20%;
+    left:13%;
+}
+.not{
+    top:0;
+    left:32%;
+}
+.notlikea_like{
+    left:42%;
+    top:9%;
+}
+.notlikea_flower{
+    left:13%;
+    top:28%;
+    transition:letter-spacing 2s ease;
+}
+.notlikea_flower:hover{
+   letter-spacing:2.17em;
+    transition:letter-spacing 2s ease;
+}
+.buti{
+    top:62%;
+    left:30%;
+}
+.notlikea_liketwo{
+    top:70%;
+    left:42%;
+}
+/*CHECK OUT MY*/
+.resumebody{
+    background-color:beige;
+}
+.resumeback{
+    position:fixed;
+    z-index:-1;
+    top:30%;
+    left:10%;
+}
+.checkoutmy_check{
+    top:10%;
+    left:32%;
+}
+.outmy{
+     top:2.5%;
+    left:45.5%;
+}
+.checkoutmy_new{
+    top:25%;
+    left:33%;
+}
+.resume{
+    top:25%;
+    left:43%;
+}
+.resume:hover .whiteout{
+    opacity:0;
+    transition: opacity 2s ease;
+}
+.whiteout{
+    position:fixed;
+    height:50px;
+    width:400px;
+        left:32%;;
+        top:40%;
+    background-color:white;
+}
+/*YOURE NOT SUPPOSE*/
+.notalkie{
+    position:fixed;
+    z-index:-1;
+    top:25%;
+    left:25%;
+}
+.youre{
+    top:20%;
+    left:45%;
+}
+.notsuppose{
+    top:20%;
+    left:48%;
+}
+.talk{
+   top:30%;
+    left:48%; 
+}
+.tohumans{
+    top:50%;
+    left:45%;  
+}
+/*YOU DONT KNOW*/
+.capablebody{
+    background-color:#b9b96b;
+}
+.abilityback{
+    position:fixed;
+    z-index:-1;
+    top:22%;
+    left:40%;
+}
+.youdontknow_you{
+    top:50%;
+    left:43%;
+}
+.dontknow{
+    top:52%;
+    left:25%;
+}
+.capable{
+    top:75%;
+    left:30%;
+}
+.list{
+    font-size:30px;
+    line-height:38px;
+    top:21%;
+    left:55%;
+    opacity:0;
+     transition:opacity .5s ease;
+    transition:color .5s ease;
+    color:black;
+}
+.capable:hover .list{
+     color:black;
+    opacity:1;
+    transition:opacity 2s ease;
+}
+/*WHEN I LEAVE*/
+.interviewbody{
+    background-color:burlywood;
+}
+.interviewback{
+    position:fixed;
+    z-index:-1;
+    height:75%;
+    width:100%;
+    top:20%;
+    left:0%;
+}
+.whenileave{
+    left:15%;
+}
+.interview{
+    left:54%;
+    top:9%;
+}
+.whenileave_theyre{
+   top:38.5%;
+    left:40%;
+    font-size:50px;
+}
+.flabbergasted{
+    top:52%;
+    left:33%;
+}
+.cantbelieve{
+    top:75%;
+    left:20%;
+}
+.whenileave_say{
+    top:83%;
+    left:61%;
+}
+.notbutter{
+    top:24%;
+    left:33%;
+    font-size:45px;
+    color:white;
+       opacity:0;
+    transition:opacity .5s ease;
+    letter-spacing:4px;
+}
+.whenileave_say:hover .notbutter{
+    opacity:1;
+    transition:opacity 2s ease;
 }
