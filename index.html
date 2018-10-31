@@ -6,318 +6,169 @@
         <style>
             
             body{
-                background-image:url("https://i.gifer.com/Ir4.gif");
-                background-color:black;
-                height:200%; 
-                width:150%;
-            }
-            .links{
-                position:absolute;
-                font-size:40px;
-                width:1500px;
-                transition:font-size 30s ease;
-                   animation: starwars 20s;
-                animation-iteration-count: infinite;
-                float:left;
-                z-index:20;
-                color:white;
-                opacity:0;
-                position:absolute;
-                top:1000px;
+                background-color:white;
+                max-height:100vh;
             }
             .sidelinks{
+                position:relative;
                 color:white;
-               font-size:40px; 
-                opacity:.1;
-                position:-webkit-sticky;
+                font-size:40px; 
                 transition:opacity 2s ease;
-                z-index:25;
-            }
-            .sidelinks:hover{
-                opacity:1;
-                transition:opacity 1s ease;
-            }
-            #sticky{
-                width:900px;
                 z-index:30;
-                   float:left;
+                left:30vw;
+            }
+            .oldie{
+                position:absolute;
+                color:white;
+                font-size:40px; 
+                transition:opacity 2s ease;
+                z-index:30;
+                left:0;  
+                top:0;
+            }
+            .oldie:hover{
+               color:darkgrey;
+                transition:color 1s ease;  
             }
             h1{
-                float:left;
-               position:sticky;
-                top:0.25rem;  
                 z-index:30;
             }
-            #carl{
-                animation-delay:0s;
-                position:absolute;
-                top:1000px;
+            .sidelinks:hover{
+                color:darkgrey;
+                transition:color 1s ease;
             }
-            #divs{
-               animation-delay:1s; 
+            .topdown{
                 position:absolute;
-                top:1000px;
+                top:50vh;
+                z-index:-5;
             }
-            #patterns{
-               animation-delay:2s; 
-                position:absolute;
-                top:1000px;
-            }
-            #absolute{
-               animation-delay:3s; 
-                position:absolute;
-                top:1000px;
-            }
-            #single{
-               animation-delay:4s; 
-                position:absolute;
-                top:1000px;
-            }
-            #program{
-               animation-delay:5s;
-                position:absolute;
-                top:1000px;
-            }
-            #fix{
-               animation-delay:6s; 
-                position:absolute;
-                top:1000px;
-            }
-            #sitemappractice{
-                animation-delay:7s;
-                 position:absolute;
-                top:1000px;
-            }
-             #bee{
-               animation-delay:8s; 
-                position:absolute;
-                top:1000px;
-            }
-            #type{
-                animation-delay:9s; 
-                position:absolute;
-                top:1000px;  
-                 }
-            #wires{
-               animation-delay:10s; 
-                position:absolute;
-                top:1000px;
-            }
-            #respond{
-               animation-delay:11s; 
-                position:absolute;
-                top:1000px;
-            }
-              #divdrawing{
-               animation-delay:12s; 
-                position:absolute;
-                top:1000px;
-            }
-             #hi{
-               animation-delay:13s; 
-                position:absolute;
-                top:1000px;
-            }
-            ol{
-            line-height:48px;
-                list-style-type: none;
+            .leftright{
+                position:static;
+                z-index:-7;
             }
             ul{
                list-style-type: none;
             }
-            .nyan{
-                width:200px;
-                height:170px;
-                z-index:6;
-            }
-            .trail{
-                position:relative;
-                right:300px;
-                top:10px;
-                height:200px;
-                width:170px;
-                z-index:-1;
-                z-index:5;
-            }
-            .elon{
-              width:231px;
-              height:160px;
+            .bar1{
+              width:20vw;
+              height:110vh;
+                background-color:black;
               opacity:1;
-              z-index:7;
+              z-index:-7;
             }
-            .star1{
-               height:50px;
-                width:150px;
-                z-index:4;
-            }
-            .star2{
-               height:25px;
-                width:100px;
-                z-index:3;
-            }
-            .star3{
-               height:5px;
-                width:20px;
-            }
-            
-/*        <iframe width="0" height="0" src="http://youtuberepeater.com/watch?v=n95JoTbP414" frameborder="0" allowfullscreen></iframe>    */
-       
-            
-#main p {
-  animation: fadein 2s;
-}
-@keyframes starwars {
-  from { font-size: 200}
-  to   { font-size: 1}
-    from { top: 1000}
-  to   { top: 0}
-      from { left:15%}
-  to   { left:45%}
-    from { opacity:0}
-  to   { opacity:1}
-}
-         
+            .bar2{
+              width:25vw;
+              height:110vh;
+                background-color:black;
+              opacity:1;
+              z-index:-7;
+            } 
+            .bar3{
+              width:10vw;
+              height:110vh;
+                background-color:black;
+              opacity:1;
+              z-index:-7;
+            } 
+            .bad4{
+              width:500vw;
+              height:25vh;
+                background-color:black;
+              opacity:1;
+              z-index:-7;
+            } 
+            .bar5{
+              width:500vw;
+              height:20vh;
+                background-color:black;
+              opacity:1;
+              z-index:-7;
+            } 
+            .bar6{
+              width:500vw;
+              height:10vh;
+                background-color:black;
+              opacity:1;
+              z-index:-7;
+            } 
         </style>
     </head>
     <body>
+        <a href="OldMainPage/index.html"class="oldie">Old Version</a>
          <h1>
-           <div class="sticky">
+<!--           <div class="sticky">-->
                <ul>
-          <li> <a href="CarlDair/index.html"class="sidelinks"id="sticky">Carl Dair</a></li>
-           <li>  <a href="DivPractice/index.html" class="sidelinks"id="sticky">Div Practice</a>   </li>
-           <li>  <a href="Patterns/index.html" class="sidelinks"id="sticky">Patterns</a>  </li>
-           <li>  <a href="absolutePosition/index.html"class="sidelinks"id="sticky">Absolute Positioning</a> </li>
-			<li> <a href="LeftOrRight/index.html"class="sidelinks"id="sticky">Single Serve ( half-width)</a></li>
-            <li>  <a href="ProgramComputer/index.html"class="sidelinks"id="sticky"> Program and Computer</a></li>
-            <li>  <a href="FixMe/index.html"class="sidelinks" id="sticky"> Fix Me</a></li>
-            <li>  <a href="BeeMovie/SiteMap/index.html"class="sidelinks" id="sticky"> Site Map Practice</a></li>
-            <li>  <a href="BeeMovie/blackandyellow/index.html" class="sidelinks"id="sticky"> Linking </a></li>
-            <li>  <a href="TypeOnScreen/index.html" class="sidelinks"id="sticky"> Type On Screen </a></li>
-            <li>  <a href="WireFrame/index.html" class="sidelinks"id="sticky"> Wire Frame(s) </a></li>
-            <li>  <a href="ResponsiveSevenPrincipal/index.html" class="sidelinks"id="sticky"> Responsive 7 Principles</a></li>
-            <li>  <a href="DivDrawing/index.html" class="sidelinks"id="sticky"> Halloween</a></li>
+          <li> <a href="CarlDair/index.html"class="sidelinks">Carl Dair</a></li>
+           <li>  <a href="DivPractice/index.html" class="sidelinks">Div Practice</a>   </li>
+           <li>  <a href="Patterns/index.html" class="sidelinks">Patterns</a>  </li>
+           <li>  <a href="absolutePosition/index.html"class="sidelinks">Absolute Positioning</a> </li>
+			<li> <a href="LeftOrRight/index.html"class="sidelinks">Single Serve ( half-width)</a></li>
+            <li>  <a href="ProgramComputer/index.html"class="sidelinks"> Program and Computer</a></li>
+            <li>  <a href="FixMe/index.html"class="sidelinks" > Fix Me</a></li>
+            <li>  <a href="BeeMovie/SiteMap/index.html"class="sidelinks" > Site Map Practice</a></li>
+            <li>  <a href="BeeMovie/blackandyellow/index.html" class="sidelinks"> Linking </a></li>
+            <li>  <a href="TypeOnScreen/index.html" class="sidelinks"> Type On Screen </a></li>
+            <li>  <a href="WireFrame/index.html" class="sidelinks"> Wire Frame(s) </a></li>
+            <li>  <a href="ResponsiveSevenPrincipal/index.html" class="sidelinks"> Responsive 7 Principles</a></li>
+            <li>  <a href="DivDrawing/index.html" class="sidelinks"> Halloween</a></li>
                </ul>
-               </div>
+<!--               </div>-->
         </h1>
-        <ol>
-             <li>   <p class="links" id="carl">Carl Dair</p></li>
-           <li>  <p class="links" id="divs">Div Practice</p> </li>    
-           <li>   <p class="links" id="patterns">Patterns</p>  </li> 
-            <li>  <p class="links" id="absolute">Absolute Positioning</p> </li>          
-			 <li> <p class="links" id="single">Single Serve ( half-width)</p></li>
-            <li>  <p class="links" id="program"> Program and Computer</p>
-            <li>  <p class="links" id="fix"> Fix Me</p></li>
-           <li>  <p class="links" id="sitemappractice"> Site Map Practice</p></li>
-            <li>  <p class="links" id="bee"> Linking</p></li>
-            <li>  <p class="links" id="type"> Type On Screen</p></li>
-            <li>  <p class="links" id="wires"> Wire Frame</p></li>
-            <li>  <p class="links" id="respond"> Responsive 7 Principles</p></li>
-            <li>  <p class="links" id="divdrawing">Halloween</p></li>
-            <li>  <p class="links" id="hi">Hello World!</p></li>
-            
-        </ol>
-<!--
-       <ol>
-             <li>   <a href="CarlDair/index.html" class="links" id="carl">Carl Dair</a></li>
-           <li>  <a href="DivPractice/index.html" class="links" id="divs">Div Practice</a> </li>    
-           <li>   <a href="Patterns/index.html" class="links" id="patterns">Patterns</a>  </li> 
-            <li>  <a href="absolutePosition/index.html" class="links" id="absolute">Absolute Positioning</a> </li>          
-			 <li> <a href="LeftOrRight/index.html" class="links" id="single">Single Serve ( half-width)</a></li>
-            <li>  <a href="ProgramComputer/index.html" class="links" id="program"> Program and Computer</a>
-            <li>  <a href="FixMe/index.html" class="links" id="fix"> Fix Me</a></li>
-<<<<<<< HEAD
-           <li>  <a href="BeeMovie/blackandyellow/index.html" class="links" id="bee"> Linking</a></li>
-=======
-           <li>  <a href="BeeMovie/SiteMap/index.html" class="links" id="sitemappractice"> Site Map Practice</a></li>
->>>>>>> cf38cfc4d59b8b7b3c607a163feaf3d7681dcd1c
-        </ol>
--->
-      
         
-         <p>
-        <marquee style="z-index:7;position:absolute;left:-300;top:108;"direction="right"scrollamount="5">
-     <img src="https://i.pinimg.com/originals/3e/50/c8/3e50c82d8802a640d1e68cf7a7427d74.gif" class="nyan"> 
-    <img src="https://pa1.narvii.com/6831/5081663ab1fe977be88a0089c956f08218489e33_hq.gif" z-index=5 class="trail" >
-    </marquee>
-    <marquee style="z-index:4;position:absolute;left:0;top:208;"direction="right"scrollamount="20">
-    <img src="imgs/SingleServe_Star/Star.png" class="star1">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-60;top:308;"direction="right"scrollamount="7">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-100;top:208;"direction="right"scrollamount="2">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:-50;top:558;"direction="right"scrollamount="25">
-    <img src="imgs/SingleServe_Star/Star.png" class="star1">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-80;top:58;"direction="right"scrollamount="13">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-20;top:698;"direction="right"scrollamount="6">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:0;top:360;"direction="right"scrollamount="4">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-600;top:648;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-400;top:518;"direction="right"scrollamount="8">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:-256;top:17;"direction="right"scrollamount="35">
-    <img src="imgs/SingleServe_Star/Star.png" class="star1">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-900;top:328;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-100;top:98;"direction="right"scrollamount="7">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:-300;top:328;"direction="right"scrollamount="10">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-173;top:268;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-30;top:405;"direction="right"scrollamount="2">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:-276;top:265;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-28;top:489;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-100;top:418;"direction="right"scrollamount="1">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-	 <marquee style="z-index:4;position:absolute;left:-300;top:728;"direction="right"scrollamount="10">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-173;top:668;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-30;top:705;"direction="right"scrollamount="2">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-     <marquee style="z-index:4;position:absolute;left:-276;top:965;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-    <marquee style="z-index:3;position:absolute;left:-28;top:889;"direction="right"scrollamount="5">
-    <img src="imgs/SingleServe_Star/Star.png" class="star2">
-    </marquee>
-     <marquee style="z-index:2;position:absolute;left:-100;top:718;"direction="right"scrollamount="1">
-    <img src="imgs/SingleServe_Star/Star.png" class="star3">
-    </marquee>
-	<marquee style="z-index:7;position:absolute;left:-3000;top:618;"direction="right"scrollamount="10">
-    <img src="imgs/SingleServe_Star/elonMusketeer.png" class="elon">
-    </marquee>
-            <span style="position:absolute;top:800px"></span>
+         <p class="leftright">
+	       <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="10">
+                <div  class="bar1"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="20">
+                <div  class="bar2"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="20">
+                <div  class="bar3"></div>
+            </marquee>
+             
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="30">
+                <div  class="bar1"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="30">
+                <div  class="bar2"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="10">
+                <div  class="bar3"></div>
+            </marquee>
+             
+           
+<!--            <span style="position:absolute;top:-800vh"></span>-->
         </p>
+        
+<!--
+        <p class="topdown">
+            <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="up"scrollamount="20">
+                <div  class="bar4"></div>
+            </marquee>
+              <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="up"scrollamount="20">
+                <div  class="bar5"></div>
+            </marquee>
+            <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="down"scrollamount="30">
+                <div  class="bar6"></div>
+            <span style="position:absolute;top:-800vh"></span>
+            </marquee>
+            <marquee style="z-index:7;position:absolute;left:0;top:-100vh;"direction="up"scrollamount="30">
+                <div  class="bar4"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="down"scrollamount="10">
+                <div  class="bar5"></div>
+            </marquee>
+             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="up"scrollamount="20">
+                <div  class="bar6"></div>
+            </marquee>
+        </p>
+-->
+
              <audio autoplay>
-	<source src="sound/shootingstar.mp3">
+	<source src="audio/impossible.mp4">
+    <source src="audio/bloodstain.mp3">
+    <source src="audio/BossyTears.mp3">
+                 
 </audio>
     </body>
 
