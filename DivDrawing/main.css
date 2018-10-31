@@ -2,16 +2,16 @@ body{
     background-color:gray;
 }
 .Container{
-    width:1260px;
-    height:960px;
+    width:105vh;
+    height:80vh;
     background-color:blue;
     
-    margin:10vh auto;
+    margin:12vh auto;
 }
 #Pixel{
     float:left;
-    height:60px;
-    width:60px;
+    height:5vh;
+    width:5vh;
     box-sizing:0;
 }
 .orange{
@@ -52,21 +52,26 @@ h2{
     line-height:50px;
     text-align:center;
     left:4vw;
-    top:2vh;
+    top:0;
     z-index:2;
     padding-top:.5vh;
     color:white;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 h1{
     position:absolute;
     font-size:5vw;
     text-align:center;
-    left:38vw;
+    left:37vw;
     top:80vh;
     z-index:2;
     padding-bottom:.5vh;
     color:white;
-    
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.Container:hover h1{
+    color:orange;
+    cursor:pointer;
 }
 a:hover{
   cursor:pointer;  
@@ -75,6 +80,7 @@ h1:hover{
     color:orange;
     cursor:pointer; 
     text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
 }
 
 #myVideo {
