@@ -121,7 +121,7 @@ h1:hover{
 @keyframes blink{
     0% {background-color:white;}
     90% {background-color:white;}
-    99% {background-color:red;}
+    98% {background-color:red;}
     100%: {background-color:saddlebrown}
     
 }
