@@ -25,6 +25,11 @@ function myFunction() {
         btn.innerHTML = "Play";
     }
 }
+    video.addEventListener("timeupdate", function(){
+    if(this.currentTime >= 24) {
+        this.pause();
+    }
+});
 </script>
     </body>
 

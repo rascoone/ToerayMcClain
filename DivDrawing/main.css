@@ -4,10 +4,18 @@ body{
 .Container{
     width:105vh;
     height:80vh;
-    background-color:blue;
+    background-color:orange;
     
     margin:12vh auto;
 }
+/*
+.BiggerContainer .tl:hover ~.Container .eye ,.whitetl{
+    background-color:black;
+    z-index:6;
+    cursor:progress;
+}
+*/
+
 #Pixel{
     float:left;
     height:5vh;
@@ -21,7 +29,24 @@ body{
 .white{
     position:relative;
     background-color:white;
+    
 }
+.fwhite{
+   position:relative; 
+}
+.whitetl{
+   position:relative; 
+}
+.whitetm{
+   position:relative;
+}
+/*
+.whitetr{
+   position:relative;
+    background-color:white; 
+    z-index:4;
+}
+*/
 .cb{
     position:relative;
     background-color:cadetblue;
@@ -64,7 +89,7 @@ h1{
     text-align:center;
     left:37vw;
     top:80vh;
-    z-index:2;
+    z-index:8;
     padding-bottom:.5vh;
     color:white;
     text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -81,6 +106,107 @@ h1:hover{
     cursor:pointer; 
     text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
+}
+.Container{
+    animation: blink 7s;
+/*    animation-timing-function:step-start;*/
+    animation-fill-mode:both;
+    animation-iteration-count:infinite;
+    
+   background-color:saddlebrown; 
+}
+.Container:hover{
+    animation-play-state:paused;
+}
+@keyframes blink{
+    0% {background-color:white;}
+    90% {background-color:white;}
+    99% {background-color:red;}
+    100%: {background-color:saddlebrown}
+    
+}
+
+.tl{
+    position:absolute;
+    width:calc(105vw  /6);
+    height:calc(80vh  /2);
+/*    background-color:green;*/
+    z-index:5;
+}
+ .tl:hover ~ .whitetl{
+    background-color:black;
+}
+.tm{
+    position:absolute;
+    left: calc(105vw /6*2.3);
+    width:calc(105vw  /6);
+    height:calc(80vh  /2);
+/*    background-color:black;*/
+    z-index:7;
+}
+.tm:hover ~ .whitetm{
+    background-color:black;
+}
+.tr{
+    position:absolute;
+    left: calc(105vw /6*3.3);
+    width:calc(105vw  /6);
+    height:calc(80vh  /2);
+/*    background-color:purple;*/
+    z-index:5;
+}
+.tr:hover ~ .whitetr{
+    background-color:black;
+}
+.whitetr{
+   position:relative; 
+    z-index:4;
+     pointer-events:auto;
+}
+.whitetm{
+   position:relative;
+    z-index:4;
+     pointer-events:auto;
+}
+.whitetl{
+   position:relative;
+    z-index:4;
+     pointer-events:auto;
+}
+.bl{
+    position:absolute;
+    top:calc(52vh);
+    width:calc(105vw  /6);
+    height:calc(80vh/2);
+/*    background-color:blue;*/
+    z-index:7;
+}
+.bl:hover ~ .whitebl{
+    background-color:black;
+}
+.bm{
+    position:absolute;
+    top:calc(52vh);
+    left: calc(105vw /6*2.3);
+    width:calc(105vw  /6);
+    height:calc(80vh/2);
+/*    background-color:black;*/
+    z-index:7;
+}
+.bm:hover ~ .whitebm{
+    background-color:black;
+}
+.br{
+    position:absolute;
+    top:calc(52vh);
+    left: calc(105vw /6*3.3);
+    width:calc(105vw  /6);
+    height:calc(80vh/2);
+/*    background-color:purple;*/
+    z-index:7;
+}
+.br:hover ~ .whitebr{
+    background-color:black;
 }
 
 #myVideo {
