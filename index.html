@@ -9,6 +9,14 @@
                 background-color:white;
                 max-height:100vh;
             }
+            .all4{
+               position:absolute;
+                width:100vw;
+                height:100vh;
+                animation:flash2 20s;
+                animation-delay:0s;
+                animation-iteration-count:infinite;
+            }
             .sidelinks{
                 position:relative;
                 color:white;
@@ -91,9 +99,56 @@
               opacity:1;
               z-index:-7;
             } 
+            .Toebox{
+            opacity:0;
+                width:20vw;
+              height:110vh;
+                animation:flash 30s;
+                animation-delay:-18s;
+                animation-iteration-count:infinite;
+            }
+             .Toebox1{
+                opacity:0;
+                 width:25vw;
+                height:110vh;
+                animation:flash 17s;
+                animation-delay:20s;
+                animation-iteration-count:infinite;
+            }
+            .Toebox2{
+                opacity:0;
+                width:20vw;
+                height:110vh;
+                animation:flash 23s;
+                animation-delay:0s;
+                animation-iteration-count:infinite;
+            }
+            .Toebox3{
+                opacity:0;
+                width:25vw;
+                height:110vh;;
+                animation:flash 23s;
+                animation-delay:-15s;
+                animation-iteration-count:infinite;
+            }
+            @keyframes flash{
+                0%{opacity:0;}
+                90%{opacity:0;}
+                92%{opacity:.7;}
+                100%{opacity:0;}
+            }
+            @keyframes flash2{
+                0%{opacity:0;}
+                88.5%{opacity:0;}
+                89%{opacity:1;}
+                90%{opacity:0;}
+                92%{opacity:.7;}
+                100%{opacity:0;}
+            }
         </style>
     </head>
     <body>
+        <img src="imgs/all4.png" class="all4">
         <a href="OldMainPage/index.html"class="oldie">Old Version</a>
          <h1>
 <!--           <div class="sticky">-->
@@ -116,23 +171,38 @@
         </h1>
         
          <p class="leftright">
-	       <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="10">
-                <div  class="bar1"></div>
+              <marquee style="z-index:5;position:absolute;left:-10000px;top:0;"direction="right"scrollamount="20">
+                    <img src="imgs/yeah0.png">
             </marquee>
-             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="20">
-                <div  class="bar2"></div>
+	       <marquee style="z-index:11;position:absolute;left:0;top:0;"direction="right"scrollamount="10">
+                <div  class="bar1">
+                    <img src="imgs/yeah.png" class="Toebox">
+                </div>
+            </marquee>
+             <marquee style="z-index:10;position:absolute;left:0;top:0;"direction="left"scrollamount="20">
+                <div  class="bar2">
+                    <img src="imgs/yeah1.png" class="Toebox1">
+                 </div>
+                 
             </marquee>
              <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="20">
-                <div  class="bar3"></div>
+                <div  class="bar3">
+                    
+                 </div>
+                 
             </marquee>
              
-             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="right"scrollamount="30">
-                <div  class="bar1"></div>
+             <marquee style="z-index:9;position:absolute;left:0;top:0;"direction="right"scrollamount="30">
+                <div  class="bar1">
+                    <img src="imgs/yeah2.png" class="Toebox2">
+                 </div>
             </marquee>
-             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="30">
-                <div  class="bar2"></div>
+             <marquee style="z-index:8;position:absolute;left:0;top:0;"direction="left"scrollamount="30">
+                <div  class="bar2">
+                    <img src="imgs/yeah3.png" class="Toebox3">
+                 </div>
             </marquee>
-             <marquee style="z-index:7;position:absolute;left:0;top:0;"direction="left"scrollamount="10">
+             <marquee style="z-index:9;position:absolute;left:0;top:0;"direction="left"scrollamount="10">
                 <div  class="bar3"></div>
             </marquee>
              
