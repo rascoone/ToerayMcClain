@@ -40,6 +40,7 @@ section {
 nav{
     position:fixed;
     top:90%;
+     z-index:100;
 }
 .playbutt{
     width:60vw;
@@ -49,7 +50,7 @@ nav{
     margin-left:15vw;
 }
 .playbuttworlds{
-        visibility: hidden;
+    visibility: hidden;
     display:none;
     }
 .playbutt:hover{
@@ -259,12 +260,39 @@ p{
 /*SMALL DESKTOP*/
 @media only screen and (min-width: 1024px) {
       body{
-    background-color:red;
-}
+        background-color:#76bdff;
+        max-height:1000vh;
+          height:1000vh;
+    }
+    .AllContaining{
+        float:none;
+    }
+    .worlds{
+        position:absolute;
+        float:none;
+        width:100vw;
+    }
+    .world{
+        float:none;
+    }
+    section{
+        float:none;
+    }
+    .ground{
+        position:relative;
+        top:0;
+        width:calc(100%);
+    }
+    .GroundBlock{
+        position:relative;
+        width:calc(100%/8);
+    }
+    nav{
+    }
 }
 /*LARGE DESKTOP may do a 1440*/
 @media only screen and (min-width: 2000px) {
       body{
-    background-color:purple;
+    background-color:#76bdff;
 }
 }
