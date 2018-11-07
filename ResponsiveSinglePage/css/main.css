@@ -1,4 +1,4 @@
-/*more line height on the bigger desktops / At max hieght for tablet view so that it changes to small desktop view if  it gets too big so there's not so much space. Change tablet font size.' / add more p padding top/bottom to amtch sides / Add a font type for p*/
+/*  Change tablet font size.' / add more p padding top/bottom to amtch sides / Add a font type for p*/
 .clearfix {
     overflow: auto;
 }
@@ -17,12 +17,10 @@ body{
     width: none;
     max-width:100vw;
     margin:0 auto;
-/*
     height:100%;
     overflow-y: scroll;
     overflow-y: hidden;
-*/
-/*   -webkit-scroll-behavior:smooth;*/
+   -webkit-scroll-behavior:smooth;
     scroll-behavior:smooth;
 }
 section {
@@ -128,12 +126,13 @@ h3{
     font-family: 'VT323', monospace;
 }
 p{
+    font-family: 'Jockey One', sans-serif;
     text-align:left; 
     font-size:4vw;
     padding-left:6vw;
     padding-right:6vw;
-    padding-top:2vw;
-    padding-bottom:2vw;
+    padding-top:4vw;
+    padding-bottom:4vw;
     margin:0 12vw 0 4vw;
     color:black;
     text-shadow: 1px 1px lightblue;
@@ -143,31 +142,57 @@ p{
     font-size:10vw;
     padding-bottom:1.5vh;
 }
-/*
 .tabletmario{
     display:none;
+    visibility:none;
 }
 .tabletgoomba{
     display:none;
 }
-*/
 .cloud{
+    display:none;
+    position:fixed;
     z-index:-40;
-    top:10vw;
-    width:100px;
-    height:70px;
+    top:5vw;
+    width:10vw;
+    height:7vw;
     background-color:white;
-    animation: moveRight 30s linear;
+    animation: moveRight 120s linear;
+    animation-delay:-40s;
     animation-iteration-count:infinite;
 }
-
+.cloudtwo{
+     display:none;
+    position:fixed;
+    z-index:-40;
+    top:15vw;
+    width:7vw;
+    height:4vw;
+    background-color:white;
+    animation: moveRight 80s linear;
+    animation-direction:reverse;
+    animation-iteration-count:infinite;
+}
+.cloud3{
+     display:none;
+    position:fixed;
+    z-index:-40;
+    top:20vw;
+    width:4vw;
+    height:2vw;
+    background-color:white;
+    animation: moveRight 60s linear;
+    animation-iteration-count:infinite;
+}
 @keyframes moveRight{
     from{left:-50%;}
     to{left:150%;}
 }
-/*TABLET*/
+
+/*-------------------TABLET--------------------*/
 
 @media only screen and (min-width: 600px) {
+@media only screen and (max-height:768px){
     body{
         background-color:#76bdff;
         float:left;
@@ -177,8 +202,6 @@ p{
         float:left;
         margin:none;
         max-height:100vh;
-        overflow-x:scroll;
-        overflow-x:hidden;
     }
     .title{
         top:1vw;
@@ -195,10 +218,11 @@ p{
     .playbuttworlds{
         visibility:visible;
         display:block;
+        z-index:40;
         position:relative;
         width:80%;
         height:80%;
-        margin:2vw 4vw;
+        margin:4vw 4vw;
         
     }
     .playbuttworlds:hover{
@@ -207,7 +231,7 @@ p{
 }
     .worlds{
         position:absolute;
-        top:15vw;
+        top:14vw;
         float:left;
 /*        width:1100vw;*/
         width:calc(800px*10);
@@ -254,8 +278,9 @@ p{
         justify-content:space-around;
     }
     .ground{
+        z-index:-10;
         position:fixed;
-        top:75%;
+        bottom: -70px;
         margin-left:2vw;
     }
     .GroundBlock{
@@ -270,15 +295,15 @@ p{
         padding-top:1vh;
     }
     h2{
-        font-size:14px;
-        line-height:12px;
+        font-size:24px;
+        line-height:22px;
         padding-left:4vh;
         text-align:left;
         margin:none;
     }
     h3{
-        font-size:16px;
-        line-height:14px;
+        font-size:20px;
+        line-height:18px;
         text-align:left;
         padding-left:4vh;
     }
@@ -287,46 +312,121 @@ p{
         margin:0 0;
         width:400px;
     }
-    
+    .cloud{
+        display:block;
+    }
+    .cloudtwo{
+        display:block;
+    }
+    .cloud3{
+        display:block;
+    }
+    .tabletgoomba{
+        visibility:visible;
+        display:block;
+    }
+    .tabletmario{
+        visibility:visible;
+        display:block
+    }
 }
-/*SMALL DESKTOP*/
+}
+
+/*---------------SMALL DESKTOP-------------*/
+
 @media only screen and (min-width: 1024px) {
       body{
         background-color:#76bdff;
-        max-height:none;
-        height:none;
+/*      max-height:none;*/
+        height:100%;
+          max-height:200%;
+/*
+        overflow-y:scroll;
+        overflow-y:hidden;
+*/
     }
     .AllContaining{
         float:none;
+        max-height:100vh;
         max-width:100vw;
+        
     }
     .worlds{
         position:absolute;
         float:none;
         width:100vw;
-        top:0;
+        top:0px;
         
     }
     .world{
         float:left;
-        margin-top:20vw;
+        margin-top:2vw;
         width:80vw;
+    }
+    .titleh1{
+        position:static;
+    }
+    .title{
+        background:none;
+    }
+    .worldlinks{
+        margin:none;
+        padding:none;
+        float:left;
+
+         max-height:none;
+    }
+    .worldlinks img{
+        position:relative;
+        float:left;
+        margin-top:10px;
+        margin-bottom:10px;
+        width:50px;
+        max-height:none;
+    }
+    nav{
+        max-width:100px;
+        max-height:none;
+        position:fixed;
+        margin:none;
+        left:0;
+        top:10px;
+        bottom:10px;
+        float:left;
+        padding:none;
+        height:100%;
     }
     section{
         position:relative;
         margin-top:3vw;
         float:none;
         display:block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
     .rightinfo{
         width:40vw;
+    }
+    .leftinfo{
+        background-color:skyblue;
+        width:15vw;
+    }
+    .playbuttworlds{
+        margin-left:1.5vw;
+    }
+    .playbuttworlds:hover{
+        opacity:.5;
     }
     .ground{
         display:none;
     }
     .ground2{
-        position:absolute;
-        top:72vw;
+        position:fixed;
+        z-index:-10;
+        left:-10px;
+        bottom: -2px;
         width:100vw;
         max-width:calc(100vw);
     }
@@ -348,75 +448,83 @@ p{
     }
 */
     p{
+        line-height:3vw;
         font-size:24px;
         width:50vw;
         max-width:800px;
         font-stretch:extra-condensed;
         }
-    }
-    .tabletmario{
+    
+    .mario{
         display:block;
+        visibility:visible;
         position:absolute;
         width:50px;
         height:50px;
-        top:70vw;
+        bottom:30px;
         background-color:red;
-        animation:tabletMario 10s ease;
+        animation:MarioMove 10s ease;
         animation-iteration-count:infinite;
     }
-    .tabletgoomba{
+    .goomba{
         display:block;
+        visibility:visible;
         position:absolute;
         width:50px;
         height:50px;
-        top:70vw;
+        bottom:20px;
         background-color:brown;
-        animation:tabletGoomba 5s linear;
+        animation:GoombaMove 5s linear;
         animation-iteration-count:infinite;
     }
-@keyframes tabletMario{
-    0%{left:-50%; top:70vw;}
-    24% {top:70vw;}
-    29% {top:60vw;}
-    34% {top:70vw;}
+
+@keyframes MarioMove{
+    0%{left:-50%; bottom:50px;}
+    24%{bottom:70px;}
+    29%{bottom:60px;}
+    34%{bottom:70px;}
     100%{left:150%;}
 }
-@keyframes tabletGoomba{
-    0%{left:110%; top:70vw;}
+@keyframes GoombaMove{
+    0%{left:110%; bottom:20vw;}
     100%{left:-20%;}
 }
-@media only screen and (min-width: 1200px) {
-    .ground2{
-        position:absolute;
-        top:64vw;
-        width:100vw;
-        max-width:calc(100vw);
-    }
-    .tabletmario{
-        display:none;
-    }
-    .tabletgoomba{
-        display:none;
-    }
 }
+
+/*---------LARGE DESKTOP may do a 1440-----------*/
+
 @media only screen and (min-width: 1440px) {
-     .ground2{
-        position:absolute;
-        top:58vw;
-        width:100vw;
-        max-width:calc(100vw);
-    }
-}
-/*LARGE DESKTOP may do a 1440*/
-@media only screen and (min-width: 2000px) {
-      body{
+    body{
 /*        background-color:#76bdff;*/
           background-color:lightpink;
-}
+    }
     .tabletmario{
     display:none;
-}
-.tabletgoomba{
+    }
+    .tabletgoomba{
     display:none;
-}
+    }
+    .title{
+        background:none;
+    }
+    p{
+        line-height:45px;
+        font-size:30px;
+    }
+    .rightinfo{
+        width:10vw;
+       max-width:20vw;
+    }
+    .leftinfo{
+        width:15vw;
+        max-width:20vw;
+    }
+    h2{
+        font-size:40px; 
+        line-height:30px;
+    }
+    h3{
+        font-size:40px;
+        line-height:38px;
+    }
 }
