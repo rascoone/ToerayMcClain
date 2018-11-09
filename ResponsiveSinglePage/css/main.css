@@ -110,7 +110,7 @@ h2{
     padding-left:6vw;
     font-size:10vw;
     font-family: 'VT323', monospace;
-        line-height:10px;
+    line-height:10px;
 }
 h3{
     text-align:left;
@@ -191,7 +191,8 @@ p{
 @media only screen and (min-width: 600px) {
 @media only screen and (max-height:768px){
     body{
-        background-color:#76bdff;
+/*        background-color:#76bdff;*/
+        background-color:red;
         float:left;
         max-height:100vh;
 }
@@ -332,7 +333,7 @@ p{
         position:absolute;
         width:60px;
         height:70px;
-        bottom:115px;
+        bottom:125px;
         left:0%;
         animation:KoopaMove 20s linear;
         animation-iteration-count:infinite;
@@ -351,7 +352,7 @@ p{
     }
     @media only screen and (min-height:600px){
     .koopa{
-        bottom:125px;
+        bottom:135px;
         }
     }
 }
@@ -360,6 +361,7 @@ p{
 /*---------------SMALL DESKTOP-------------*/
 
 @media only screen and (min-width: 1024px) {
+    @media only screen and (max-width: 1399px) {
       body{
         background-color:#76bdff;
 /*      max-height:none;*/
@@ -461,23 +463,12 @@ p{
         float:left;
         width:calc(100vw/30); 
     }
-/*
-    .ground{
-        position:relative;
-        top:0;
-        width:calc(100vw/2);
-    }
-    .GroundBlock{
-        position:relative;
-        width:calc(100%/8);
-    }
-*/
     p{
         line-height:3vw;
         font-size:24px;
         width:50vw;
         max-width:800px;
-        font-stretch:extra-condensed;
+/*        font-stretch:extra-condensed;*/
         }
     
     .mario{
@@ -494,10 +485,11 @@ p{
         display:none;
     }
 
-@keyframes MarioMove{
-    0%{left:-50%; bottom:30px;}
-    100%{left:150%;}
-}
+    @keyframes MarioMove{
+        0%{left:-50%; bottom:30px;}
+        100%{left:150%;}
+        }
+    }
 }
 
 /*---------LARGE DESKTOP may do a 1440-----------*/

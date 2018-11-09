@@ -1,0 +1,163 @@
+body{
+    background-color:pink;
+    margin:none;
+}
+.allfive{
+    width:70vw;
+    background-color:blue;
+    margin:0 auto;
+}
+h1{
+    position:absolute;
+    left:calc(100%/4*2.5);
+}
+.ffave{
+    
+}
+.sfave{
+    top:20%;  
+}
+.tfave{
+    top:40%;
+}
+.fofave{
+    top:60%;
+}
+.fifave{
+    top:80%;
+}
+.hideh1{
+    display:none;
+}
+.raccpic{
+    position:absolute;
+    width:50vw;
+    height:calc(100vh/5);
+    left:0;
+    top:0;
+    z-index:-1;
+    transition:all 4s ease;
+}
+.catpic{
+    position:absolute;
+    width:50vw;
+    height:calc(100vh/5);
+    left:0;
+    top:calc(100%/5);
+    z-index:-1;
+    transition:all 4s ease;
+}
+.squpic{
+    position:absolute;
+    width:50vw;
+    height:calc(100vh/5);
+    left:0;
+    top:calc(100%/5*2);
+    z-index:-1;
+    transition:all 4s ease;
+}
+.deepic{
+    position:absolute;
+    width:50vw;
+    height:calc(100vh/5);
+    left:0;
+    top:calc(100%/5*3);
+    z-index:-1;
+    transition:all 4s ease;
+}
+.cuttpic{
+    position:absolute;
+    width:50vw;
+    height:calc(100vh/5);
+    left:0;
+    top:calc(100%/5*4);
+    z-index:-1;
+    transition:all 4s ease;
+}
+#raccoon{
+    width:50vw;
+    height:calc(100vh/5);
+    margin:0 auto;
+    top:0;
+    transition:all 4s ease;
+}
+#raccoon:hover{
+    cursor:pointer;
+    opacity:.9;
+    margin:0 auto;
+    top:0;
+}
+#cat{
+    width:50vw;
+    height:calc(100vh/5);
+    margin:0 auto;
+    transition:all 4s ease;
+}
+#cat:hover{
+    cursor:pointer; 
+    opacity:.9;
+}
+#squirrel{
+    width:50vw;
+    height:calc(100vh/5);
+    margin:0 auto;
+    transition:all 4s ease;
+}
+#squirrel:hover{
+    cursor:pointer; 
+    opacity:.9;
+}
+#deer{
+    width:50vw;
+    height:calc(100vh/5);
+    margin:0 auto;
+    transition:all 4s ease;
+}
+#deer:hover{
+    cursor:pointer; 
+    opacity:.9;
+}
+#cuttlefish{
+    width:50vw;
+    height:calc(100vh/5);
+    margin:0 auto;
+    transition:all 4s ease;
+}
+#cuttlefish:hover{
+    cursor:pointer; 
+    opacity:.9;
+}
+.one{
+    position:absolute;
+    left:0%;
+    background-color:black;
+    
+}
+.two{
+    position:absolute;
+    left:0%;
+    top:calc(100%/5);
+    background-color:red;
+}
+.three{
+    position:absolute;
+    left:0%;
+    top:calc(100%/5*2);
+    background-color:green;
+}
+.four{
+    position:absolute;
+    left:0%;
+    top:calc(100%/5*3);
+    background-color:orange;
+}
+.five{
+    position:absolute;
+    left:0%;
+    top:calc(100%/5*4);
+    background-color:yellow;
+}
+.moveIT{
+    left:50%;
+    transition:all 4s ease;
+}
