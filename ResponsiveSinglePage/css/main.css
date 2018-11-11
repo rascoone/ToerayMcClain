@@ -1,6 +1,6 @@
 /*
 *{
-    transition:all .5s ease;
+    transition:scroll-behavior 1s ease;
 }
 */
 .clearfix {

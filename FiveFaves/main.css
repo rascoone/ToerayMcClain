@@ -10,7 +10,7 @@ body{
 }
 .mypic{
     position:absolute;
-    left:-.25vw;
+    left:0;
     display:none;
     margin:none;
     top:0;
@@ -79,7 +79,7 @@ p{
 #myButtontwo{
     position:absolute;
     top:10%;
-    left:80%; 
+    left:48%; 
     z-index:2;
     color:pink;
     background-color:black;
