@@ -1,3 +1,8 @@
+/*
+*{
+    transition:all .5s ease;
+}
+*/
 .clearfix {
     overflow: auto;
 }
@@ -189,10 +194,10 @@ p{
 /*-------------------TABLET--------------------*/
 
 @media only screen and (min-width: 600px) {
-@media only screen and (max-height:768px){
+/*@media only screen and (max-width:1023px){*/
     body{
-/*        background-color:#76bdff;*/
-        background-color:red;
+        background-color:#76bdff;
+/*        background-color:red;*/
         float:left;
         max-height:100vh;
 }
@@ -356,14 +361,18 @@ p{
         }
     }
 }
-}
+/*}*/
 
 /*---------------SMALL DESKTOP-------------*/
 
-@media only screen and (min-width: 1024px) {
-    @media only screen and (max-width: 1399px) {
+@media only screen and (min-height: 769px) {
+    @media only screen and (max-width: 1800px) {
+         @media only screen and (min-width: 600px) {
+             
+    
       body{
         background-color:#76bdff;
+/*           background-color:red;*/
 /*      max-height:none;*/
         height:100%;
           max-height:200%;
@@ -491,12 +500,154 @@ p{
         }
     }
 }
+}
+
+/*---------------SMALL DESKTOP-------------*/
+
+/*@media only screen and (min-height: 769px) {*/
+    @media only screen and (max-width: 1800px) {
+         @media only screen and (min-width: 950px) {
+             
+    
+      body{
+        background-color:#76bdff;
+/*           background-color:red;*/
+/*      max-height:none;*/
+        height:100%;
+          max-height:200%;
+/*
+        overflow-y:scroll;
+        overflow-y:hidden;
+*/
+    }
+    .AllContaining{
+        float:none;
+        max-height:100vh;
+        max-width:100vw;
+        
+    }
+    .worlds{
+        position:absolute;
+        float:none;
+        width:100vw;
+        top:0px;
+        
+    }
+    .world{
+        float:left;
+        margin-top:2vw;
+        width:80vw;
+    }
+    .titleh1{
+        position:static;
+    }
+    .title{
+        background:none;
+    }
+    .worldlinks{
+        margin:none;
+        padding:none;
+        float:left;
+
+         max-height:none;
+    }
+    .worldlinks img{
+        position:relative;
+        float:left;
+        margin-top:10px;
+        margin-bottom:10px;
+        width:50px;
+        max-height:none;
+    }
+    nav{
+        max-width:100px;
+        max-height:none;
+        position:fixed;
+        margin:none;
+        left:0;
+        top:10px;
+        bottom:10px;
+        float:left;
+        padding:none;
+        height:100%;
+    }
+    section{
+        position:relative;
+        margin-top:3vw;
+        float:none;
+        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .rightinfo{
+        width:40vw;
+    }
+    .leftinfo{
+        background-color:skyblue;
+        width:15vw;
+    }
+    .playbuttworlds{
+        margin-left:1.5vw;
+    }
+    .playbuttworlds:hover{
+        opacity:.5;
+    }
+    .ground{
+        display:none;
+    }
+    .ground2{
+        position:fixed;
+        z-index:200;
+        left:-10px;
+        bottom: -2px;
+        width:100vw;
+        max-width:100vw;
+    }
+    .GroundBlock2{
+        position:relative;
+        display:block;
+        float:left;
+        width:calc(100vw/30); 
+    }
+    p{
+        line-height:3vw;
+        font-size:24px;
+        width:50vw;
+        max-width:800px;
+/*        font-stretch:extra-condensed;*/
+        }
+    
+    .mario{
+        display:block;
+        visibility:visible;
+        position:absolute;
+        width:80px;
+        height:100px;
+        bottom:30px;
+        animation:MarioMove 30s ease;
+        animation-iteration-count:infinite;
+    }
+    .koopa{
+        display:none;
+    }
+
+    @keyframes MarioMove{
+        0%{left:-50%; bottom:30px;}
+        100%{left:150%;}
+        }
+    }
+}
+/*}*/
 
 /*---------LARGE DESKTOP may do a 1440-----------*/
 
 @media only screen and (min-width: 1440px) {
+/*    @media only screen and (min-height: 1440px) {*/
     body{
         background-color:#76bdff;
+         background-color:green;
     }
     .mario{
         height:10vw;
@@ -532,3 +683,4 @@ p{
         line-height:38px;
     }
 }
+/*}*/

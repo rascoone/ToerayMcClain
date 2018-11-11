@@ -1,30 +1,57 @@
+
 body{
     background-color:pink;
     margin:none;
 }
 .allfive{
-    width:70vw;
-    background-color:blue;
+/*    width:70vw;*/
+/*    background-color:blue;*/
     margin:0 auto;
 }
 h1{
     position:absolute;
     left:calc(100%/4*2.5);
 }
+p{
+    position:absolute;
+    left:calc(100%/4*2.5);
+    opacity:0;
+    z-index:-1
+}
 .ffave{
     
+}
+.racp{
+    top:0%;
+    opacity:1;
 }
 .sfave{
     top:20%;  
 }
+.catp{
+    top:20%;
+    opacity:1;
+}
 .tfave{
     top:40%;
+}
+.squp{
+     top:40%;
+    opacity:1;
 }
 .fofave{
     top:60%;
 }
+.deep{
+     top:60%;
+    opacity:1;
+}
 .fifave{
     top:80%;
+}
+.cutp{
+     top:80%;
+    opacity:1;
 }
 .hideh1{
     display:none;
@@ -36,7 +63,6 @@ h1{
     left:0;
     top:0;
     z-index:-1;
-    transition:all 4s ease;
 }
 .catpic{
     position:absolute;
@@ -45,7 +71,6 @@ h1{
     left:0;
     top:calc(100%/5);
     z-index:-1;
-    transition:all 4s ease;
 }
 .squpic{
     position:absolute;
@@ -54,7 +79,6 @@ h1{
     left:0;
     top:calc(100%/5*2);
     z-index:-1;
-    transition:all 4s ease;
 }
 .deepic{
     position:absolute;
@@ -63,7 +87,6 @@ h1{
     left:0;
     top:calc(100%/5*3);
     z-index:-1;
-    transition:all 4s ease;
 }
 .cuttpic{
     position:absolute;
@@ -72,14 +95,12 @@ h1{
     left:0;
     top:calc(100%/5*4);
     z-index:-1;
-    transition:all 4s ease;
 }
 #raccoon{
     width:50vw;
     height:calc(100vh/5);
     margin:0 auto;
     top:0;
-    transition:all 4s ease;
 }
 #raccoon:hover{
     cursor:pointer;
@@ -121,7 +142,7 @@ h1{
     width:50vw;
     height:calc(100vh/5);
     margin:0 auto;
-    transition:all 4s ease;
+/*    transition:all 4s ease;*/
 }
 #cuttlefish:hover{
     cursor:pointer; 
@@ -133,12 +154,14 @@ h1{
     background-color:black;
     
 }
+
 .two{
     position:absolute;
     left:0%;
     top:calc(100%/5);
     background-color:red;
 }
+
 .three{
     position:absolute;
     left:0%;
@@ -159,5 +182,14 @@ h1{
 }
 .moveIT{
     left:50%;
-    transition:all 4s ease;
+    transition:all 3s ease;
+}
+.away{
+    left:10%;
+    transition:all 3s ease;
+}
+.coverIT{
+    left:0%;
+    width:100vw;
+    transition:all 3s ease;
 }
