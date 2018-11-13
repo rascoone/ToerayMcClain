@@ -366,7 +366,7 @@ p{
 /*---------------SMALL DESKTOP-------------*/
 
 @media only screen and (min-height: 769px) {
-    @media only screen and (max-width: 1800px) {
+/*    @media only screen and (max-width: 3000px) {*/
          @media only screen and (min-width: 600px) {
              
     
@@ -502,10 +502,10 @@ p{
 }
 }
 
-/*---------------SMALL DESKTOP-------------*/
+/*---------------SMALL DESKTOP 2-------------*/
 
-/*@media only screen and (min-height: 769px) {*/
-    @media only screen and (max-width: 1800px) {
+@media only screen and (min-height: 769px) {
+    @media only screen and (max-width: 3000px) {
          @media only screen and (min-width: 950px) {
              
     
@@ -639,15 +639,17 @@ p{
         }
     }
 }
-/*}*/
+}
 
 /*---------LARGE DESKTOP may do a 1440-----------*/
 
+
+@media only screen and (min-height: 769px) {
 @media only screen and (min-width: 1440px) {
-/*    @media only screen and (min-height: 1440px) {*/
+    
     body{
         background-color:#76bdff;
-         background-color:green;
+/*         background-color:green;*/
     }
     .mario{
         height:10vw;
@@ -683,4 +685,4 @@ p{
         line-height:38px;
     }
 }
-/*}*/
+}
