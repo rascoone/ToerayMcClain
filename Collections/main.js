@@ -13,6 +13,14 @@ $(document).ready(function(){
 });
 //let racc1,cat1,squ1,dee1,cutt1=0;
 function navigate(){
+    $('#aboutChunk').addClass('slideOff');
+    $('#homeChunk').addClass('slideOff');
+    $('#details2Chunk').addClass('slideOff');
+    $('#detailsChunk').addClass('slideOff');
+    $('#chunkOne').addClass('slideOff');
+    $('#chunkTwo').addClass('slideOff');
+    $('#homeChunk').addClass('comeOn');
+    
         $('#homie').click(function(){ 
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('slideOff');
@@ -27,6 +35,10 @@ function navigate(){
             $('#homeChunk').addClass('slideOff');
             $('#details2Chunk').addClass('slideOff');
             $('#aboutChunk').addClass('slideOff');
+            $('#chunkOne').addClass('slideOff');
+            $('#chunkTwo').removeClass('comeOn');
+            $('#chunkTwo').addClass('slideOff');
+            $('#chunkOne').removeClass('comeOn');
             $('#details2Chunk').removeClass('comeOn');
             $('#homeChunk').removeClass('comeOn');
             $('#aboutChunk').removeClass('comeOn');
@@ -48,13 +60,19 @@ function navigate(){
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
-            $('#chunkOne').addClass('comeOn');            console.log('clicked');
+            $('#chunkOne').addClass('comeOn'); 
+            $('#chunkTwo').removeClass('comeOn');
+            console.log('clicked');
         });
         $('#tempBoxTwo').click(function(){ 
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
-            $('#chunktwo').addClass('comeOn');            console.log('clicked');
+            $('#chunkOne').removeClass('comeOn');
+            $('#chunkOne').addClass('slideOff');
+            
+            $('#chunkTwo').addClass('comeOn');   
+            console.log('clicked');
         });
        
 }
