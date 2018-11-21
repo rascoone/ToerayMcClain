@@ -20,7 +20,8 @@ function quiz(){
         var rights=0;
         console.log(answer);
         
-        $('#aButt').click(function(){   
+        $('#aButt').click(function(){ 
+             if(questions<11){
             if(answer==1){
                 rights++;
                 grade = ((rights/questions))*100;
@@ -36,9 +37,25 @@ function quiz(){
             console.log('questions right ' + rights + '/' + questions );
             $('p').text(questions + '/' + '10');
             questions++;
+            if(grade<30){
+                $('h2').addClass('red');
+            }else{
+                $('h2').removeClass('red');
+            }
+        }
+        if(questions>10){
+            $('#retake').addClass('results');
+            if(grade<30){
+                $('#lose').addClass('results');
+            }else{
+                $('#win').addClass('results');
+            }
+            
+        }
              });
     
-        $('#bButt').click(function(){   
+        $('#bButt').click(function(){  
+             if(questions<11){
             if(answer==2){
                 rights++;
                 grade = ((rights/questions))*100;
@@ -54,8 +71,24 @@ function quiz(){
                 console.log('questions right ' + rights + '/' + questions );
             $('p').text(questions + '/' + '10');
                 questions++;
+            if(grade<30){
+                $('h2').addClass('red');
+            }else{
+                $('h2').removeClass('red');
+            }
+        }
+        if(questions>10){
+            $('#retake').addClass('results');
+            if(grade<30){
+                $('#lose').addClass('results');
+            }else{
+                $('#win').addClass('results');
+            }
+            
+        }
              });
-        $('#cButt').click(function(){   
+        $('#cButt').click(function(){
+             if(questions<11){
             if(answer==3){
                 rights++;
                 grade = ((rights/questions))*100;
@@ -71,6 +104,21 @@ function quiz(){
                 console.log('questions right ' + rights + '/' + questions );
             $('p').text(questions + '/' + '10');
                 questions++;
+            if(grade<30){
+                $('h2').addClass('red');
+            }else{
+                $('h2').removeClass('red');
+            }
+        }
+        if(questions>10){
+            $('#retake').addClass('results');
+            if(grade<30){
+                $('#lose').addClass('results');
+            }else{
+                $('#win').addClass('results');
+            }
+            
+        }
              });
         $('#dButt').click(function(){  
         if(questions<11){
