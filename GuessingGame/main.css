@@ -1,5 +1,7 @@
 body{
 background-color:beige;
+/*    overflow: hidden;*/
+    justify-content: center;
 }
 .AllContainer{
     margin:50px 20vw 0 20vw;
@@ -22,27 +24,66 @@ h2{
 h3{
     text-align:center;
 }
+h4{
+    text-align:center;
+}
+p{
+    position:fixed;
+    top:0vw;
+    right:4vw;
+    z-index:-1;
+    font-size:60px;
+}
 .buttons{
     margin:0 auto;
     max-width:600px;
-    place-items: center;
+    padding-left:5vw;
 }
 button{
     margin:4% 8% 0% 4%; 
     width:200px;
     height:70px;
     font-size:40px;
+    border-radius: 12px;
+    border: 2px solid #4CAF50;
+    transition:all .5s ease;
+    color:blue;
+    background-color:aliceblue;
+}
+button:hover{
+    box-shadow:1px 10px 10px 1px gray;
+        cursor:pointer;
+    color:green;
+    background-color:cadetblue;
+     width:220px;
+    height:90px;
+}
+.red{
+    color:red;
+}
+img{
+    position:absolute;
+    z-index:3;
+    margin:0 auto;
+    top:5vh;
+    left:30vw;
+    width:40vw;
+    height:40vw;
+    display:none;
+}
+#retake{
+    position:fixed;
+    top:3vw;
+    left:0vw;
+    width:90px;
+    height:60px;
+    font-size:20px;
+/*    display:none;*/
+}
+.results{
+    display:block;
     
 }
-.aButt{
-    color:blue;
-}
-.bButt{
-    color:blue;
-}
-.cButt{
-    color:blue;
-}
-.dButt{
-    color:blue;
-}
+
+
+/*----------------*/

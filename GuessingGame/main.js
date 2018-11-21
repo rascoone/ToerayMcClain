@@ -18,7 +18,6 @@ function quiz(){
         var grade= 100;
         var questions = 1;
         var rights=0;
-    
         console.log(answer);
         
         $('#aButt').click(function(){   
@@ -35,6 +34,7 @@ function quiz(){
             answer = Math.floor((Math.random()*4)+1);
             console.log('next answer ' + answer);
             console.log('questions right ' + rights + '/' + questions );
+            $('p').text(questions + '/' + '10');
             questions++;
              });
     
@@ -52,6 +52,7 @@ function quiz(){
                 answer = Math.floor((Math.random()*4)+1);
                 console.log('next answer ' + answer);
                 console.log('questions right ' + rights + '/' + questions );
+            $('p').text(questions + '/' + '10');
                 questions++;
              });
         $('#cButt').click(function(){   
@@ -68,9 +69,11 @@ function quiz(){
                 answer = Math.floor((Math.random()*4)+1);
                 console.log('next answer ' + answer);
                 console.log('questions right ' + rights + '/' + questions );
+            $('p').text(questions + '/' + '10');
                 questions++;
              });
-        $('#dButt').click(function(){   
+        $('#dButt').click(function(){  
+        if(questions<11){
             if(answer==4){
                 rights++;
                 grade = ((rights/questions))*100;
@@ -84,12 +87,30 @@ function quiz(){
                 answer = Math.floor((Math.random()*4)+1);
                 console.log('next answer ' + answer);
                 console.log('questions right ' + rights + '/' + questions );
+            $('p').text(questions + '/' + '10');
                 questions++;
+            if(grade<30){
+                $('h2').addClass('red');
+            }else{
+                $('h2').removeClass('red');
+            }
+        }
+        if(questions>10){
+            $('#retake').addClass('results');
+            if(grade<30){
+                $('#lose').addClass('results');
+            }else{
+                $('#win').addClass('results');
+            }
+            
+        }
+        
              });
 //        $("#myButton").click(function(){
 //          
 //	       location.reload();
 //	       }); 
-              
-
+    $('#retake').click(function(){ 
+       location.reload();       
+    });
 }
