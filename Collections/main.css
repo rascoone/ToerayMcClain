@@ -1,0 +1,160 @@
+body{
+    margin-top:0;
+    background-color:black;
+    text-decoration-color:white;
+}
+.AllContainer{
+    max-width:80%;
+    width:70%;
+    margin:0 auto;
+}
+#homeChunk{
+    position:absolute;
+    margin:0 auto;
+    left:15.5%;
+    transition:left 1s ease; 
+}
+#detailsChunk{
+    position:absolute;
+    margin:0 auto;
+    left:-100%;
+    transition:left 1s ease;
+    opacity:0;
+}
+#details2Chunk{
+    position:absolute;
+    margin:0 auto;
+    left:-100%;
+    transition:left 1s ease;
+    opacity:0;
+}
+#aboutChunk{
+    position:absolute;
+    margin:0 auto;
+    left:-100%;
+    transition:left 1s ease;
+    opacity:0;
+}
+.slideOff{
+    animation:goOff 2s ease;
+    animation-fill-mode:forwards;
+}
+.comeOn{
+    opacity:1;
+    animation:comeOn 2s ease;
+    animation-fill-mode:forwards;
+}
+.navBar{
+    background-color:white;
+    height:60px;
+    width:900px;
+    margin-top:0;
+    font-size:20px;
+    
+}
+@keyframes goOff{
+    from{left:15.5%; opacity:1;}
+    to{left:-100%; }
+}
+@keyframes comeOn{
+    from{left:150%;}
+    to{left:15.5%;opacity:1;}
+}
+.navP{
+    position:relative;
+    float:left;
+    margin-left:30px;
+    margin-top:0;
+    top:0%;
+    left:17%;
+}
+.navP:hover{
+   cursor:pointer; 
+    opacity:.2;
+}
+.section{
+    margin-top:50px;
+    width:900px;
+    height:200px;
+}
+.textual{
+    height:200px;
+/*    float:left;*/
+    background-color:blue;
+}
+.descript{
+    position:relative;
+/*    float:left;*/
+    color:white;
+}
+.slant{
+    font-size:40px;
+    opacity:1;
+}
+.slant:hover{
+    opacity:1;
+}
+h1{
+    position:absolute;
+    color:white;
+    top:60px;
+    left:23vw;
+    margin:0 auto;
+    max-width:900px;
+}
+.entries{
+    margin-top:50px;
+}
+.tempBox{
+    position:relative;
+    background-color:white;
+    width:900px;
+    height:200px;
+    margin-top:50px;
+}
+.tempBox:Hover{
+    cursor:pointer;
+    opacity:.5;
+}
+.chunks{
+    position:absolute;
+    max-height:100%;
+    left:-200%;
+}
+.tempbox{
+    position:relative;
+    background-color:white;
+    width:200px;
+    height:200px;
+}
+.tempPic{
+    position:relative;
+    background-color:white;
+    width:200px;
+    height:200px;
+    margin-top:50px;
+}
+.temppic{
+    position:absolute;
+    background-color:aliceblue;
+    left:0;
+    top:0;
+    z-index:2;
+    width:100vw;
+    height:100vw;
+    animation:fadeOut 4s ease;
+    animation-fill-mode:forwards;
+}
+.anothertempPic{
+     position:relative;
+    background-color:white;
+    width:900px;
+    height:500px;
+    margin-top:50px;
+}
+@keyframes fadeOut{
+    0%{opacity:1}
+    80%{opacity:1; z-index:1;}
+    100%{opacity:0; display:none; z-index:-5;}
+}
+
