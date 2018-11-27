@@ -5,11 +5,16 @@
 body{
     margin-top:0;
     background-color:black;
+    overflow:hidden;
 }
 .AllContainer{
     max-width:80%;
     width:70%;
     margin:0 auto;
+    
+}
+.scrollBars{
+    overflow:visible;
 }
 #homeChunk{
     position:absolute;
@@ -77,10 +82,9 @@ body{
 }
 .section{
     margin-top:50px;
-/*    width:900px;*/
+    width:900px;
     height:200px;
     max-height:200px;
-    background-color:aliceblue;
 }
 .textual{
     position:relative;
@@ -106,12 +110,14 @@ body{
     opacity:1;
 }
 h1{
-    position:absolute;
+/*    position:absolute;*/
     color:white;
     top:60px;
-    left:23vw;
-    margin:0 auto;
-    max-width:900px;
+    width:900px;
+/*    margin:0 auto;*/
+    padding-top:10px;
+    text-align:center;
+    font-size:30px;
 }
 .entries{
     margin-top:50px;
@@ -133,17 +139,33 @@ h1{
     left:-200%;
 }
 .tempbox{
-/*    position:relative;*/
-    background-color:white;
-    width:200px;
-    height:200px;
-}
-.tempPic{
     position:relative;
     background-color:white;
     width:200px;
     height:200px;
+}
+.tempbox p{
+    position:relative;
+    color:white;
+    width:600px;
+    max-width:600px;
+    margin-left:300px;
+}
+.selfie{
+    position:relative;
+    background-color:white;
+    width:400px;
+    height:600px;
     margin-top:50px;
+}
+.aboutDescript{
+    position:absolute;
+    color:white;
+    top:0;
+    left:0;
+    width: 600px;
+    max-width:600px;
+    margin-left:500px;
 }
 .temppic{
     position:absolute;
@@ -168,4 +190,8 @@ h1{
     80%{opacity:1; z-index:1;}
     100%{opacity:0; display:none; z-index:-5;}
 }
-
+@media only screen and (max-width: 1440px) {
+    body{
+        background-color:hotpink;
+    }
+}
