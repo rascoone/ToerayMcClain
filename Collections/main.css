@@ -5,12 +5,14 @@
 body{
     margin-top:0;
     background-color:black;
+    
 /*    overflow:hidden;*/
 }
 .AllContainer{
     max-width:80%;
     width:70%;
     margin:0 auto;
+    left:20%;
     
 }
 .scrollBars{
@@ -41,7 +43,7 @@ body{
     opacity:0;
 }
 .slideOff{
-    animation:goOff 6s ease;
+    animation:goOff 4s ease;
     animation-fill-mode:forwards;
 }
 .comeOn{
@@ -58,8 +60,8 @@ body{
     
 }
 @keyframes goOff{
-    from{left:15.5%; opacity:0;}
-    to{left:-800%;}
+    from{left:15.5%; opacity:1;}
+    to{left:-400%;}
 }
 @keyframes comeOn{
     from{left:150%;}
@@ -121,14 +123,16 @@ h1{
 }
 .entBox{
     position:relative;
-    background-color:white;
     width:900px;
-    height:200px;
     margin-top:50px;
 }
 .entBox:Hover{
     cursor:pointer;
     opacity:.5;
+}
+.entry{
+    width:900px;
+    height:200px;
 }
 .chunks{
     position:absolute;
