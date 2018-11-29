@@ -12,6 +12,12 @@ $(document).ready(function(){
 });
 
 function navigate(){
+    var secrets=0;
+    var sec1=0;
+    var sec2=0;
+    var sec3=0;
+    var sec4=0;
+    var sec5=0;
     $('#aboutChunk').addClass('slideOff');
     $('#homeChunk').addClass('slideOff');
     $('#details2Chunk').addClass('slideOff');
@@ -29,6 +35,9 @@ function navigate(){
     $('#homeChunk').addClass('comeOn');
     
         $('#homie').click(function(){ 
+             $('#aboot').removeClass('youAreHere');
+             $('#deets').removeClass('youAreHere');
+             $('#homie').addClass('youAreHere');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('slideOff');
             $('#aboutChunk').addClass('slideOff');
@@ -61,6 +70,9 @@ function navigate(){
             console.log('clicked');
         });
         $('#deets').click(function(){ 
+             $('#aboot').removeClass('youAreHere');
+             $('#deets').addClass('youAreHere');
+             $('#homie').removeClass('youAreHere');
             $('#homeChunk').addClass('slideOff');
             $('#details2Chunk').addClass('slideOff');
             $('#aboutChunk').addClass('slideOff');
@@ -93,6 +105,9 @@ function navigate(){
             console.log('clicked');
         });
          $('#aboot').click(function(){ 
+             $('#aboot').addClass('youAreHere');
+             $('#deets').removeClass('youAreHere');
+             $('#homie').removeClass('youAreHere');
              $('#homeChunk').addClass('slideOff');
              $('#detailsChunk').addClass('slideOff');
              $('#details2Chunk').addClass('slideOff');
@@ -100,7 +115,7 @@ function navigate(){
              $('#detailsChunk').removeClass('comeOn');
              $('#details2Chunk').removeClass('comeOn');
             $('#aboutChunk').addClass('comeOn');
-             $('h1').text('MY COLLECTIONS INFLUENCE');
+             $('h1').text('MY COLLECTION\'S INFLUENCE');
              $('body').removeClass('scrollBars');
              $('#chunkOne').removeClass('comeOn');
             $('#chunkOne').addClass('slideOff');
@@ -204,4 +219,61 @@ function navigate(){
             $('#chunkTen').addClass('comeOn');   
             console.log('clicked');
         });
+    $('#sec1').click(function(){ 
+        if(sec1<=0){
+            sec1++;
+            secrets++;
+            $('h3').text('Secrets Found:' + secrets + '/5'); 
+        }
+         if(secrets==5){
+        $('#secretImg').addClass('displayImg');
+    }
+            console.log(sec1 + secrets);
+        });
+    $('#sec2').click(function(){ 
+        if(sec2<=0){
+            sec2++;
+            secrets++;
+            $('h3').text('Secrets Found:' + secrets + '/5'); 
+        }
+         if(secrets==5){
+        $('#secretImg').addClass('displayImg');
+    }
+            console.log(sec2 + secrets);
+        });
+    $('#sec3').click(function(){ 
+        if(sec3<=0){
+            sec3++;
+            secrets++;
+            $('h3').text('Secrets Found:' + secrets + '/5'); 
+        }
+         if(secrets==5){
+        $('#secretImg').addClass('displayImg');
+    }
+            console.log(sec3 + secrets);
+        });
+    $('#sec4').click(function(){ 
+        if(sec4<=0){
+            sec4++;
+            secrets++;
+            $('h3').text('Secrets Found:' + secrets + '/5'); 
+        }
+         if(secrets==5){
+        $('#secretImg').addClass('displayImg');
+    }
+            console.log(sec4 + secrets);
+        });
+    $('#sec5').click(function(){ 
+        if(sec5<=0){
+            sec5++;
+            secrets++;
+            $('h3').text('Secrets Found:' + secrets + '/5');
+            $('h4').text('Secrets Found:' + secrets + '/5');
+        }
+         if(secrets==5){
+        $('#secretImg').addClass('displayImg');
+    }
+            console.log(sec5 + secrets);
+        });
+   
 }
