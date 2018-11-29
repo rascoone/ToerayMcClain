@@ -5,7 +5,7 @@
 body{
     margin-top:0;
     background-color:black;
-    overflow:hidden;
+/*    overflow:hidden;*/
 }
 .AllContainer{
     max-width:80%;
@@ -25,26 +25,23 @@ body{
 #detailsChunk{
     position:absolute;
     margin:0 auto;
-    left:-100%;
     transition:left 1s ease;
     opacity:0;
 }
 #details2Chunk{
     position:absolute;
     margin:0 auto;
-    left:-100%;
     transition:left 1s ease;
     opacity:0;
 }
 #aboutChunk{
     position:absolute;
     margin:0 auto;
-    left:-100%;
     transition:left 1s ease;
     opacity:0;
 }
 .slideOff{
-    animation:goOff 2s ease;
+    animation:goOff 6s ease;
     animation-fill-mode:forwards;
 }
 .comeOn{
@@ -61,8 +58,8 @@ body{
     
 }
 @keyframes goOff{
-    from{left:15.5%; opacity:1;}
-    to{left:-100%; }
+    from{left:15.5%; opacity:0;}
+    to{left:-800%;}
 }
 @keyframes comeOn{
     from{left:150%;}
@@ -110,26 +107,26 @@ body{
     opacity:1;
 }
 h1{
-/*    position:absolute;*/
     color:white;
     top:60px;
     width:900px;
-/*    margin:0 auto;*/
     padding-top:10px;
     text-align:center;
     font-size:30px;
+    margin-bottom:0;
 }
 .entries{
-    margin-top:50px;
+/*    margin-top:50px;*/
+    min-width:900px;
 }
-.tempBox{
+.entBox{
     position:relative;
     background-color:white;
     width:900px;
     height:200px;
     margin-top:50px;
 }
-.tempBox:Hover{
+.entBox:Hover{
     cursor:pointer;
     opacity:.5;
 }
@@ -155,7 +152,8 @@ h1{
     position:relative;
     background-color:white;
     width:400px;
-    height:600px;
+    height:500px;
+    bottom:50px;
     margin-top:50px;
 }
 .aboutDescript{
@@ -192,6 +190,6 @@ h1{
 }
 @media only screen and (max-width: 1440px) {
     body{
-        background-color:hotpink;
+        background-color:gray;
     }
 }

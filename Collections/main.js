@@ -1,7 +1,6 @@
 $(document).ready(function(){
     
     navigate();
-//    movements();
     
    $(window).resize(function(){ 
        
@@ -11,7 +10,7 @@ $(document).ready(function(){
     });
     
 });
-//let racc1,cat1,squ1,dee1,cutt1=0;
+
 function navigate(){
     $('#aboutChunk').addClass('slideOff');
     $('#homeChunk').addClass('slideOff');
@@ -19,6 +18,14 @@ function navigate(){
     $('#detailsChunk').addClass('slideOff');
     $('#chunkOne').addClass('slideOff');
     $('#chunkTwo').addClass('slideOff');
+     $('#chunkThree').addClass('slideOff');
+     $('#chunkFour').addClass('slideOff');
+     $('#chunkFive').addClass('slideOff');
+     $('#chunkSix').addClass('slideOff');
+     $('#chunkSeven').addClass('slideOff');
+     $('#chunkEight').addClass('slideOff');
+     $('#chunkNine').addClass('slideOff');
+     $('#chunkTen').addClass('slideOff');
     $('#homeChunk').addClass('comeOn');
     
         $('#homie').click(function(){ 
@@ -35,6 +42,22 @@ function navigate(){
             $('#chunkOne').addClass('slideOff');
             $('#chunkTwo').removeClass('comeOn');
             $('#chunkTwo').addClass('slideOff');
+            $('#chunkThree').removeClass('comeOn');
+            $('#chunkThree').addClass('slideOff');
+            $('#chunkFour').removeClass('comeOn');
+            $('#chunkFour').addClass('slideOff');
+            $('#chunkFive').removeClass('comeOn');
+            $('#chunkFive').addClass('slideOff');
+            $('#chunkSix').removeClass('comeOn');
+            $('#chunkSix').addClass('slideOff');
+            $('#chunkSeven').removeClass('comeOn');
+            $('#chunkSeven').addClass('slideOff');
+            $('#chunkEight').removeClass('comeOn');
+            $('#chunkEight').addClass('slideOff');
+            $('#chunkNine').removeClass('comeOn');
+            $('#chunkNine').addClass('slideOff');
+            $('#chunkTen').removeClass('comeOn');
+            $('#chunkTen').addClass('slideOff');
             console.log('clicked');
         });
         $('#deets').click(function(){ 
@@ -51,6 +74,22 @@ function navigate(){
             $('#chunkOne').removeClass('comeOn');
             $('#chunkTwo').removeClass('comeOn');
             $('#chunkTwo').addClass('slideOff');
+            $('#chunkThree').removeClass('comeOn');
+            $('#chunkThree').addClass('slideOff');
+            $('#chunkFour').removeClass('comeOn');
+            $('#chunkFour').addClass('slideOff');
+            $('#chunkFive').removeClass('comeOn');
+            $('#chunkFive').addClass('slideOff');
+            $('#chunkSix').removeClass('comeOn');
+            $('#chunkSix').addClass('slideOff');
+            $('#chunkSeven').removeClass('comeOn');
+            $('#chunkSeven').addClass('slideOff');
+            $('#chunkEight').removeClass('comeOn');
+            $('#chunkEight').addClass('slideOff');
+            $('#chunkNine').removeClass('comeOn');
+            $('#chunkNine').addClass('slideOff');
+            $('#chunkTen').removeClass('comeOn');
+            $('#chunkTen').addClass('slideOff');
             console.log('clicked');
         });
          $('#aboot').click(function(){ 
@@ -67,13 +106,28 @@ function navigate(){
             $('#chunkOne').addClass('slideOff');
             $('#chunkTwo').removeClass('comeOn');
             $('#chunkTwo').addClass('slideOff');
+            $('#chunkThree').removeClass('comeOn');
+            $('#chunkThree').addClass('slideOff');
+            $('#chunkFour').removeClass('comeOn');
+            $('#chunkFour').addClass('slideOff');
+            $('#chunkFive').removeClass('comeOn');
+            $('#chunkFive').addClass('slideOff');
+            $('#chunkSix').removeClass('comeOn');
+            $('#chunkSix').addClass('slideOff');
+            $('#chunkSeven').removeClass('comeOn');
+            $('#chunkSeven').addClass('slideOff');
+            $('#chunkEight').removeClass('comeOn');
+            $('#chunkEight').addClass('slideOff');
+            $('#chunkNine').removeClass('comeOn');
+            $('#chunkNine').addClass('slideOff');
+            $('#chunkTen').removeClass('comeOn');
+            $('#chunkTen').addClass('slideOff');
             console.log('clicked');
         });
         
         $('#gameOne').click(function(){ 
             $('h1').text('FLYING DRAGON - XBOX, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
-            $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
             $('#chunkOne').addClass('comeOn'); 
             console.log('clicked');
