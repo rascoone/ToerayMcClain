@@ -164,7 +164,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameFour').click(function(){ 
-            $('h1').text('KUNG FU CHAOS - XBOX, FIGHTER PARTY');
+            $('h1').text('KUNG FU CHAOS - XBOX, PARTY FIGHTING ');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -172,7 +172,7 @@ function navigate(){
             console.log('clicked');
         });
        $('#gameFive').click(function(){ 
-            $('h1').text('POKEMON YELLOW - GAMEBOY, ADVENTURE PUZZLE');
+            $('h1').text('POKEMON YELLOW - GAMEBOY COLOR, ROLE-PLAYING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -180,7 +180,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameSix').click(function(){ 
-            $('h1').text('MORTAL KOMBAT - XBOX, FIGHTER');
+            $('h1').text('MORTAL KOMBAT ARMAGEDDON - XBOX, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -188,7 +188,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameSeven').click(function(){ 
-            $('h1').text('RUNESCAPE - PC, MMO');
+            $('h1').text('RUNESCAPE - PC, MMO ROLE-PLAYING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -204,7 +204,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameNine').click(function(){ 
-            $('h1').text('SUPER SMASH BROS BRAWL - WII, PARTY FIGHTER');
+            $('h1').text('SUPER SMASH BROS BRAWL - WII, PARTY FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -212,7 +212,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameTen').click(function(){ 
-            $('h1').text('SOUL CALIBUR - XBOX 360, FIGHTER');
+            $('h1').text('SOUL CALIBUR - XBOX 360, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
@@ -224,6 +224,7 @@ function navigate(){
             sec1++;
             secrets++;
             $('h3').text('Secrets Found:' + secrets + '/5'); 
+            $('h4').text('Secrets Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -235,6 +236,7 @@ function navigate(){
             sec2++;
             secrets++;
             $('h3').text('Secrets Found:' + secrets + '/5'); 
+            $('h4').text('Secrets Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -246,6 +248,7 @@ function navigate(){
             sec3++;
             secrets++;
             $('h3').text('Secrets Found:' + secrets + '/5'); 
+            $('h4').text('Secrets Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -257,6 +260,7 @@ function navigate(){
             sec4++;
             secrets++;
             $('h3').text('Secrets Found:' + secrets + '/5'); 
+            $('h4').text('Secrets Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');

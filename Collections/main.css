@@ -18,7 +18,7 @@ body{
     
 }
 .scrollBars{
-    overflow:visible;
+/*    overflow:visible;*/
 }
 #homeChunk{
     position:absolute;
@@ -166,14 +166,25 @@ h3:hover{
     transition:opacity 2s ease;
     cursor:default;
 }
+h4{
+    font-size:80px;
+    color:white;
+    text-align:center;
+    opacity:.03;
+}
 .homeSecretsFound{
     font-size:80px;
     color:white;
     text-align:center;
+    transition:opacity 2s ease;
+}
+.homeSecretsFound:hover{
+    opacity:1;
+    transition:opacity 2s ease;
 }
 .miniGameText{
     font-size:40px;
-    opacity:.1;
+    opacity:.03;
     color:white;
     max-width:900px;
     text-align:center;
@@ -207,15 +218,15 @@ h3:hover{
     left:-200%;
     top:100px;
 }
-.tempbox{
+.entImg{
     position:relative;
-    background-color:white;
     width:200px;
     height:200px;
 }
-.tempbox p{
+.entImg p{
     position:relative;
     color:white;
+    top:-200px;
     width:600px;
     max-width:600px;
     margin-left:300px;
@@ -248,17 +259,17 @@ h3:hover{
     animation:fadeOut 3s ease;
     animation-fill-mode:forwards;
 }
-.anothertempPic{
-     position:relative;
-    background-color:white;
+.homePic{
+    position:relative;
     width:900px;
     height:500px;
-    margin-top:50px;
+    margin:0 auto;
+    margin-top:30px;
 }
 .hiddenBox{
     position:absolute;
     background-color:white;
-    opacity:.06;
+    opacity:.01;
     height:60px;
     width:60px;
     z-index:5;
@@ -276,7 +287,7 @@ h3:hover{
 #sec2{
     position:fixed;
     top:0px;
-    opacity:.02;
+    opacity:.01;
     left:400px;
     z-index:5;
     background-color:black;
@@ -288,7 +299,7 @@ h3:hover{
 #sec3{
     top:1000px;
     left:30px;
-    animation:moveSecLeft 20s linear;
+    animation:moveSecLeft 40s linear;
     animation-iteration-count:infinite;
 }
 #sec4{
@@ -319,14 +330,16 @@ h3:hover{
     opacity:1;
 }
 @keyframes blinkSec{
-    0%{opacity:0;}
-    90%{opacity:0;}
-    99%{opacity:.08;}
-    100%{opacity:0;}
+    0%{opacity:.005;}
+    95%{opacity:.005;}
+    99%{opacity:.05;}
+    100%{opacity:.005;}
 }
 @keyframes moveSecUp{
-    from{top:100%;}
-    to{top:0%;}
+    0%{top:100%;}
+    10%{opacity:.01;}
+    90%{opacity:.01;}
+    100%{top:0%; opacity:0;}
 }
 @keyframes moveSecLeft{
     from {left:-100%;}
