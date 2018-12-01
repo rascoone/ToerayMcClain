@@ -1,6 +1,7 @@
 $(document).ready(function(){
     
     navigate();
+    hourGlassTimer();
     
    $(window).resize(function(){ 
        
@@ -12,12 +13,40 @@ $(document).ready(function(){
 });
 
 function navigate(){
+    $(document).ready(function() {
+    var loadScreenImg = Math.floor((Math.random()*10)+1);
+    console.log(loadScreenImg);
+    if(loadScreenImg==1){
+        $('#lsOne').addClass('loadScreenShow');
+    }else if(loadScreenImg==2){
+        $('#lsTwo').addClass('loadScreenShow');
+    }else if(loadScreenImg==3){
+        $('#lsThree').addClass('loadScreenShow');
+    }else if(loadScreenImg==4){
+        $('#lsFour').addClass('loadScreenShow');
+    }else if(loadScreenImg==5){
+        $('#lsFive').addClass('loadScreenShow');
+    }else if(loadScreenImg==6){
+        $('#lsSix').addClass('loadScreenShow');
+    }else if(loadScreenImg==7){
+        $('#lsSeven').addClass('loadScreenShow');
+    }else if(loadScreenImg==8){
+        $('#lsEight').addClass('loadScreenShow');
+    }else if(loadScreenImg==9){
+        $('#lsNine').addClass('loadScreenShow');
+    }else if(loadScreenImg==10){
+        $('#lsTen').addClass('loadScreenShow');
+    }else if(loadScreenImg==11){
+        $('#lsEleven').addClass('loadScreenShow');
+    }
+         });
     var secrets=0;
     var sec1=0;
     var sec2=0;
     var sec3=0;
     var sec4=0;
     var sec5=0;
+    var glassTimer=setInterval(hourGlassTimer, 2000);
     $('#aboutChunk').addClass('slideOff');
     $('#homeChunk').addClass('slideOff');
     $('#details2Chunk').addClass('slideOff');
@@ -35,6 +64,8 @@ function navigate(){
     $('#homeChunk').addClass('comeOn');
     
         $('#homie').click(function(){ 
+            $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
              $('#aboot').removeClass('youAreHere');
              $('#deets').removeClass('youAreHere');
              $('#homie').addClass('youAreHere');
@@ -67,9 +98,13 @@ function navigate(){
             $('#chunkNine').addClass('slideOff');
             $('#chunkTen').removeClass('comeOn');
             $('#chunkTen').addClass('slideOff');
+            glassTimer;
             console.log('clicked');
         });
         $('#deets').click(function(){ 
+            $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
              $('#aboot').removeClass('youAreHere');
              $('#deets').addClass('youAreHere');
              $('#homie').removeClass('youAreHere');
@@ -105,6 +140,9 @@ function navigate(){
             console.log('clicked');
         });
          $('#aboot').click(function(){ 
+             $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
              $('#aboot').addClass('youAreHere');
              $('#deets').removeClass('youAreHere');
              $('#homie').removeClass('youAreHere');
@@ -141,6 +179,9 @@ function navigate(){
         });
         
         $('#gameOne').click(function(){ 
+            $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('FLYING DRAGON - XBOX, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#detailsChunk').removeClass('comeOn');
@@ -148,6 +189,9 @@ function navigate(){
             console.log('clicked');
         });
         $('#gameTwo').click(function(){ 
+            $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('UNREAL TOURNAMENT - XBOX, FIRST PERSON SHOOTER');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -156,6 +200,9 @@ function navigate(){
             console.log('clicked');
         });
         $('#gameThree').click(function(){ 
+            $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('WHACKED! - XBOX, PARTY');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -164,6 +211,9 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameFour').click(function(){ 
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('KUNG FU CHAOS - XBOX, PARTY FIGHTING ');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -172,6 +222,9 @@ function navigate(){
             console.log('clicked');
         });
        $('#gameFive').click(function(){ 
+           $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('POKEMON YELLOW - GAMEBOY COLOR, ROLE-PLAYING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -180,30 +233,42 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameSix').click(function(){ 
-            $('h1').text('MORTAL KOMBAT ARMAGEDDON - XBOX, FIGHTING');
-            $('#detailsChunk').addClass('slideOff');
-            $('#details2Chunk').addClass('comeOn');
-            $('#detailsChunk').removeClass('comeOn');
-            $('#chunkFive').addClass('comeOn');   
-            console.log('clicked');
-        });
-    $('#gameSeven').click(function(){ 
-            $('h1').text('RUNESCAPE - PC, MMO ROLE-PLAYING');
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
+            $('h1').text('MORTAL KOMBAT DECEPTION - XBOX, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
             $('#chunkSix').addClass('comeOn');   
             console.log('clicked');
         });
-    $('#gameEight').click(function(){ 
-            $('h1').text('ARCANIST - PC, COMBAT ARENA');
+    $('#gameSeven').click(function(){ 
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
+            $('h1').text('RUNESCAPE - PC, MMO ROLE-PLAYING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
             $('#detailsChunk').removeClass('comeOn');
             $('#chunkSeven').addClass('comeOn');   
             console.log('clicked');
         });
+    $('#gameEight').click(function(){ 
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
+            $('h1').text('ARCANIST - PC, COMBAT ARENA');
+            $('#detailsChunk').addClass('slideOff');
+            $('#details2Chunk').addClass('comeOn');
+            $('#detailsChunk').removeClass('comeOn');
+            $('#chunkEight').addClass('comeOn');   
+            console.log('clicked');
+        });
     $('#gameNine').click(function(){ 
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('SUPER SMASH BROS BRAWL - WII, PARTY FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -212,6 +277,9 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameTen').click(function(){ 
+        $('#Glass').removeClass('showGlass');
+            $('#Glass').addClass('showGlass');
+            glassTimer;
             $('h1').text('SOUL CALIBUR - XBOX 360, FIGHTING');
             $('#detailsChunk').addClass('slideOff');
             $('#details2Chunk').addClass('comeOn');
@@ -280,4 +348,9 @@ function navigate(){
             console.log(sec5 + secrets);
         });
    
+}
+function hourGlassTimer(){
+    $('#Glass').removeClass('showGlass');
+    
+    
 }
