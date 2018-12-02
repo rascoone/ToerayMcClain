@@ -226,10 +226,11 @@ h4{
 .entImg p{
     position:relative;
     color:white;
-    top:-200px;
+    top:-240px;
     width:600px;
     max-width:600px;
     margin-left:300px;
+    font-size:30px;
 }
 .selfie{
     position:relative;
@@ -242,11 +243,22 @@ h4{
 .aboutDescript{
     position:absolute;
     color:white;
+    top:130px;
+    left:0;
+    width: 600px;
+    max-width:600px;
+    margin-left:500px;
+    font-size:30px;
+}
+ .aboutTop{
+     position:absolute;
+    color:white;
     top:0;
     left:0;
     width: 600px;
     max-width:600px;
     margin-left:500px;
+    font-size:40px;
 }
 .loadScreen{
     position:fixed;
@@ -352,6 +364,7 @@ h4{
 }
 .displayImg{
     opacity:1;
+    transition:opacity 60s ease;
 }
 @keyframes blinkSec{
     0%{opacity:.005;}
@@ -366,14 +379,14 @@ h4{
     100%{top:0%; opacity:0;}
 }
 @keyframes moveSecLeft{
-    from {left:-100%;}
-    to {left:200%;}
+    from {left:-50%;}
+    to {left:100%;}
 }
 @keyframes fadeOut{
     0%{opacity:1; left:0; z-index:10;}
     80%{opacity:1; z-index:10;}
     98%{opacity:0; display:none; z-index:-5;left:0;}
-    100%{left:-2000px; opacity:0;}
+    100%{left:-4000px; opacity:0;}
 }
 @keyframes fadeHourGlass{
     0%{opacity:1;}
@@ -384,4 +397,12 @@ h4{
     body{
         background-color:gray;
     }
+    #homeChunk{
+    position:absolute;
+    left:15.5%;
+}
+    @keyframes comeOn{
+    from{left:150%;}
+    to{left:25vw;opacity:1;}
+}
 }
