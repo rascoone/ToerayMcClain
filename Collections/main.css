@@ -1,6 +1,6 @@
  *{
             box-sizing:border-box;
-            
+            font-family: 'Chakra Petch', sans-serif;
         }
 body{
     margin-top:0;
@@ -12,7 +12,8 @@ body{
 /*    position:absolute;*/
 /*    max-width:80%;*/
     background-color:aliceblue;
-    width:900px;
+/*    width:900px;*/
+    width:70vw;
     margin:0 auto;
 /*    left:20%;*/
     
@@ -23,7 +24,6 @@ body{
 #homeChunk{
     position:absolute;
     margin:0 auto;
-    left:25%;
     transition:left 1s ease; 
     top:100px;
 }
@@ -60,8 +60,9 @@ body{
 .navBar{
     position:fixed;
     margin-top:0;
-    font-size:20px;
-    left:26vw;
+    font-size:1vw;
+    max-width:70vw;
+    left:25vw;
     z-index:3;
 }
 .whiteBar{
@@ -87,43 +88,34 @@ body{
     margin-left:30px;
     margin-top:0;
     top:15px;
-    left:17%;
+    left:4vw;
+    font-family: 'Press Start 2P', cursive;
 }
 .navP:hover{
     cursor:pointer; 
     opacity:.2;
+    
 }
 .section{
     margin-top:50px;
-    width:900px;
-    height:200px;
+    width:50vw;
+    height:12vw;
     max-height:200px;
-}
-.textual{
-    position:relative;
-    height:200px;
-    width: 500px;
-    float:left;
-    font-size:20px;
-    color:white;
-    background-color:rebeccapurple;
 }
 .descriptor{
     position:relative;
     float:left;
 }
-.textual:hover{
-    opacity:0;
-}
 .slant{
-    font-size:40px;
+    font-size:1.5vw;
     opacity:1;
     position:relative;
     float:left;
     margin-left:30px;
     margin-top:0;
     top:5px;
-    left:100px;
+    left:3vw;
+    font-family: 'Press Start 2P', cursive;
 }
 .slant:hover{
     opacity:1;
@@ -136,11 +128,11 @@ h1{
     position:absolute;
     color:white;
     top:60px;
-    width:900px;
+    width:50vw;
     padding-top:10px;
     text-align:center;
-    font-size:30px;
-    left:25%;
+    font-size:1.7vw;
+    left:25vw;
 }
 h3{
     position:fixed;
@@ -149,16 +141,7 @@ h3{
     z-index:5;
     color:black;
     opacity:.1;
-    transition:opacity 2s ease;
-}
-h3:hover{
-    opacity:1;
-    transition:opacity 2s ease;
-    cursor:default;
-}
-h3{
-    z-index:5;
-    opacity:.1;
+     z-index:5;
     transition:opacity 2s ease;
 }
 h3:hover{
@@ -169,24 +152,32 @@ h3:hover{
 h4{
     font-size:80px;
     color:white;
-    text-align:center;
     opacity:.03;
 }
 .homeSecretsFound{
-    font-size:80px;
+    position:relative;
+    font-size:3vw;
     color:white;
+    left:0;
+    z-index:5;
     text-align:center;
     transition:opacity 2s ease;
+}
+.centering{
+/*    left:10%;*/
 }
 .homeSecretsFound:hover{
     opacity:1;
     transition:opacity 2s ease;
 }
 .miniGameText{
-    font-size:40px;
+    position:relative;
+    font-size:2vw;
     opacity:.03;
     color:white;
     max-width:900px;
+    left:0;
+    z-index:5;
     text-align:center;
     transition:opacity 2s ease;
 }
@@ -209,8 +200,8 @@ h4{
     opacity:.5;
 }
 .entry{
-    width:900px;
-    height:200px;
+    width:50vw;
+    height:15vw;
 }
 .chunks{
     position:absolute;
@@ -220,23 +211,24 @@ h4{
 }
 .entImg{
     position:relative;
-    width:200px;
-    height:200px;
+    width:50%;
+    height:100%;
+    max-width:900px;
 }
 .entImg p{
     position:relative;
     color:white;
-    top:-240px;
+    top:-120%;
     width:600px;
-    max-width:600px;
-    margin-left:300px;
-    font-size:30px;
+    max-width:200%;
+    margin-left:75%;
+    font-size:180%;
 }
 .selfie{
     position:relative;
     background-color:white;
-    width:400px;
-    height:500px;
+    width:25vw;
+    height:30vw;
     bottom:50px;
     margin-top:50px;
 }
@@ -244,21 +236,21 @@ h4{
     position:absolute;
     color:white;
     top:130px;
-    left:0;
-    width: 600px;
-    max-width:600px;
-    margin-left:500px;
-    font-size:30px;
+    left:-15%;
+    width: 100%;
+    max-width:100%;
+    margin-left:130%;
+    font-size:180%;
 }
  .aboutTop{
-     position:absolute;
+    position:absolute;
     color:white;
     top:0;
-    left:0;
-    width: 600px;
+    left:-15%;
+    width: 100%;
     max-width:600px;
-    margin-left:500px;
-    font-size:40px;
+    margin-left:130%;
+    font-size:200%;
 }
 .loadScreen{
     position:fixed;
@@ -298,9 +290,10 @@ h4{
 }
 .homePic{
     position:relative;
-    width:900px;
-    height:500px;
-    margin:0 auto;
+    width:45vw;
+    height:30vw;
+    left:3%;
+/*    margin:0 auto;*/
     margin-top:30px;
 }
 .hiddenBox{
@@ -399,10 +392,70 @@ h4{
     }
     #homeChunk{
     position:absolute;
-    left:15.5%;
+    left:25vw;
 }
     @keyframes comeOn{
     from{left:150%;}
     to{left:25vw;opacity:1;}
+}
+}
+@media only screen and (max-width: 768px) {
+    body{
+        background-color:slategray;
+    }
+    h4{
+        display:none;
+    }
+    .miniGameText{
+        display:none;
+    }
+    .secretImg{
+        display:none;
+    }
+    .AllContaining{
+        width:70vw;
+    }
+    #homeChunk{
+    position:absolute;
+    left:15.5%;
+}
+    @keyframes comeOn{
+    from{left:150%;}
+    to{left:15.5vw;opacity:1;}
+}
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-color:black;
+    }
+    .AllContainer{
+            width:70vw;
+    }
+    .navBar{
+        font-size:40%;
+        left:0;
+    }
+    .slant{
+        font-size:14px;
+        left:0;
+    }
+    h1{
+        left:0%;
+        text-align:left;
+    }
+    #homeChunk{
+    margin:0;
+    left:0%;
+    transition:left 1s ease; 
+}
+    .homePic{
+        width:40%x;
+        height:20%;
+        left:0vw;
+        margin:none;
+    }
+    @keyframes comeOn{
+    from{left:150%;}
+    to{left:5vw;opacity:1;}
 }
 }
