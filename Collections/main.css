@@ -133,12 +133,13 @@ h1{
 }
 h3{
     position:fixed;
-    top:0px;
-    right:70px;
+    top:-.5%;
+    right:3%;
     z-index:5;
     color:black;
     opacity:.1;
-     z-index:5;
+    z-index:5;
+    font-size:1vw;
     transition:opacity 2s ease;
 }
 h3:hover{
@@ -176,7 +177,7 @@ h4{
     color:white;
     max-width:42vw;
     top:5vw;
-    left:4vw;
+    left:4.5vw;
     z-index:5;
     text-align:center;
 /*    margin:0 auto;*/
@@ -227,6 +228,9 @@ h4{
     max-width:90%;
     margin-left:2%;
 }
+.entImg img{
+    margin-top:10%;
+}
 .entImg p{
     position:relative;
     color:white;
@@ -234,7 +238,7 @@ h4{
     width:700px;
     max-width:100%;
     margin-left:75%;
-    font-size:130%;
+    font-size:170%;
 }
 .selfie{
     position:relative;
@@ -278,20 +282,20 @@ h4{
 }
 .hourGlass{
     position:fixed;
-    right:100px;
-    bottom:100px;
-    width:100px;
-    height:150px;
+    right:5vw;
+    bottom:5vw;
+    width:8vw;
+    height:10vw;
     z-index:11;
     animation:fadeHourGlass 4.5s ease;
     animation-fill-mode:forwards;
 }
 .hourGlassTwo{
     position:fixed;
-    right:100px;
-    bottom:100px;
-    width:100px;
-    height:150px;
+    right:5vw;
+    bottom:5vw;
+    width:8vw;
+    height:10vw;
     z-index:11;
     opacity:0;
     transition:opacity 1s ease;
@@ -304,16 +308,17 @@ h4{
     position:relative;
     width:40vw;
     height:30vw;
-    left:5%;
+    left:6%;
+/*    opacity:.5;*/
 /*    margin:0 auto;*/
     margin-top:30px;
 }
 .hiddenBox{
     position:absolute;
     background-color:white;
-    opacity:.01;
-    height:60px;
-    width:60px;
+    opacity:.05;
+    height:5vw;
+    width:5vw;
     z-index:10;
     transition:opacity 2s ease;
 }
@@ -323,14 +328,15 @@ h4{
     transition:opacity 2s ease;
 }
 #sec1{
-    top:100px;
-    left:80px;
+    top:10vw;
+    left:5vw;
 }
 #sec2{
     position:fixed;
     top:0px;
     opacity:.05;
-    left:400px;
+    left:10vw;
+    height:3vw;
     z-index:5;
     background-color:black;
 }
@@ -339,20 +345,20 @@ h4{
     transition:opacity 2s ease;
 }
 #sec3{
-    top:50%;
+    top:50vw;
     left:30px;
-    animation:moveSecLeft 40s linear;
+    animation:moveSecLeft 20s linear;
     animation-iteration-count:infinite;
 }
 #sec4{
-    top:400px;
-    right:30px;
+    top:30vw;
+    right:2vw;
     animation:moveSecUp 20s linear;
     animation-iteration-count:infinite;
 }
 #sec5{
-    top:800px;
-    right:200px;
+    top:40vw;
+    right:10vw;
     animation:blinkSec 20s linear;
     animation-iteration-count:infinite;
 }
@@ -412,9 +418,16 @@ h4{
     h1{
         font-size:2.5vw;
     }
+    h3{
+        top:-1%;
+        font-size:1.5vw;
+    }
     .navP{
         top:.5vw;
         left:5vw;
+    }
+    .entImg P{
+        font-size:130%;
     }
     .aboutTop{
         font-size:1.5vw;
@@ -429,7 +442,7 @@ h4{
     to{left:25vw;opacity:1;}
 }
 }
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 900px) {
     body{
         background-color:slategray;
     }
@@ -442,10 +455,13 @@ h4{
         margin:.5% auto;
     }
     .navP{
-/*        left:0vw;*/
+        left:7vw;
     }
     .slant{
         width:.5vw;
+    }
+    h3{
+        display:none;
     }
     .hiddenBox{
         display:none;
@@ -462,6 +478,9 @@ h4{
     .AllContaining{
         width:70vw;
     }
+    .entImg img{
+    margin-top:20%;
+}
     
     #homeChunk{
     position:absolute;
@@ -472,7 +491,7 @@ h4{
     to{left:25vw;opacity:1;}
 }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     body{
         background-color:black;
     }
@@ -481,29 +500,29 @@ h4{
     }
     .navBar{
         font-size:40%;
-        left:0;
+/*        left:0;*/
     }
     .slant{
         font-size:14px;
-        left:0;
+/*        left:0;*/
     }
     h1{
-        left:0%;
-        text-align:left;
+/*        left:0%;*/
+/*        text-align:left;*/
     }
     #homeChunk{
     margin:0;
-    left:0%;
+    left:0;
     transition:left 1s ease; 
 }
     .homePic{
         width:40%x;
         height:20%;
-        left:0vw;
+        left:25vw;
         margin:none;
     }
     @keyframes comeOn{
     from{left:150%;}
-    to{left:5vw;opacity:1;}
+    to{left:25vw;opacity:1;}
 }
 }

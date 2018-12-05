@@ -291,8 +291,8 @@ function navigate(){
         if(sec1<=0){
             sec1++;
             secrets++;
-            $('h3').text('Secrets Found:' + secrets + '/5'); 
-            $('h4').text('Secrets Found:' + secrets + '/5');
+            $('h3').text('Blocks Found:' + secrets + '/5'); 
+            $('h4').text('Blocks Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -303,8 +303,8 @@ function navigate(){
         if(sec2<=0){
             sec2++;
             secrets++;
-            $('h3').text('Secrets Found:' + secrets + '/5'); 
-            $('h4').text('Secrets Found:' + secrets + '/5');
+            $('h3').text('Blocks Found:' + secrets + '/5'); 
+            $('h4').text('Blocks Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -315,8 +315,8 @@ function navigate(){
         if(sec3<=0){
             sec3++;
             secrets++;
-            $('h3').text('Secrets Found:' + secrets + '/5'); 
-            $('h4').text('Secrets Found:' + secrets + '/5');
+            $('h3').text('Blocks Found:' + secrets + '/5'); 
+            $('h4').text('Blocks Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -327,8 +327,8 @@ function navigate(){
         if(sec4<=0){
             sec4++;
             secrets++;
-            $('h3').text('Secrets Found:' + secrets + '/5'); 
-            $('h4').text('Secrets Found:' + secrets + '/5');
+            $('h3').text('Blocks Found:' + secrets + '/5'); 
+            $('h4').text('Blocks Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -339,8 +339,8 @@ function navigate(){
         if(sec5<=0){
             sec5++;
             secrets++;
-            $('h3').text('Secrets Found:' + secrets + '/5');
-            $('h4').text('Secrets Found:' + secrets + '/5');
+            $('h3').text('Blocks Found:' + secrets + '/5');
+            $('h4').text('Blocks Found:' + secrets + '/5');
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
