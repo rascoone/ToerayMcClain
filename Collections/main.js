@@ -2,6 +2,7 @@ $(document).ready(function(){
     
     navigate();
     hourGlassTimer();
+    chooseSong();
     
    $(window).resize(function(){ 
        
@@ -49,6 +50,7 @@ function navigate(){
     var sec3=0;
     var sec4=0;
     var sec5=0;
+    var ding = new Audio("imgs/ding.mp3");
     var audio = new Audio("imgs/SecretsFound.mp3" ) ;
     var glassTimer=setInterval(hourGlassTimer, 2000);
     $('#aboutChunk').addClass('slideOff');
@@ -313,6 +315,7 @@ function navigate(){
             secrets++;
             $('h3').text('Blocks Found:' + secrets + '/5'); 
             $('h4').text('Blocks Found:' + secrets + '/5');
+            ding.play();
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -327,6 +330,7 @@ function navigate(){
             secrets++;
             $('h3').text('Blocks Found:' + secrets + '/5'); 
             $('h4').text('Blocks Found:' + secrets + '/5');
+            ding.play();
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -341,6 +345,7 @@ function navigate(){
             secrets++;
             $('h3').text('Blocks Found:' + secrets + '/5'); 
             $('h4').text('Blocks Found:' + secrets + '/5');
+            ding.play();
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -355,6 +360,7 @@ function navigate(){
             secrets++;
             $('h3').text('Blocks Found:' + secrets + '/5'); 
             $('h4').text('Blocks Found:' + secrets + '/5');
+            ding.play();
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -369,6 +375,7 @@ function navigate(){
             secrets++;
             $('h3').text('Blocks Found:' + secrets + '/5');
             $('h4').text('Blocks Found:' + secrets + '/5');
+            ding.play();
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
@@ -389,3 +396,73 @@ function PlaySound(path) {
   audioElement.setAttribute('src', path);
   audioElement.play();
 }
+function chooseSong(){
+//                $(document).ready(function(){
+        var songBool = 0;
+        var audOne = new Audio("imgs/GungeonTheme.mp3");
+        var audTwo = new Audio("imgs/bloodstain.mp3");
+        var audThree = new Audio("imgs/SnowWorries.mp3");
+        var audFour = new Audio("imgs/Brawl.mp3");
+        var audFive = new Audio("imgs/EZClap.mp3");
+        var audSix = new Audio("imgs/Basement.mp3");
+        var audSeven = new Audio("imgs/HourGlassCaves.mp3");
+                $('#playButton').click(function(){
+                    var ranSong = Math.floor((Math.random()*7)+1);
+                    console.log(ranSong);
+                    console.log('before: ' + songBool);
+                    if(songBool==0){
+                        songBool=1;
+                    }
+//                    }else if(songBool==1){
+//                        songBool=0;
+//                    }
+                    console.log('after: ' + songBool);
+                    
+                    if(songBool==1){
+                        if(ranSong==1){
+                            $('.songArtist').text('Enter the Gungeon');
+                            $('.songTitle').text('Main Theme');
+                             audOne.play(); 
+                            songBool=2;
+                        }else if(ranSong==2){
+                            $('.songArtist').text('BloodStained: Curse of the Moon');
+                            $('.songTitle').text('Blasphemy unto Heaven');
+                           audTwo.play(); 
+                            songBool=2;
+                        }else if(ranSong==3){ 
+                            $('.songArtist').text('Ty the Tasmanian Tiger');
+                            $('.songTitle').text('Snow Worries');
+                            audThree.play();
+                            songBool=2;
+                        }else if(ranSong==4){ 
+                            $('.songArtist').text('Super Smash Bros: Brawl');
+                            $('.songTitle').text('Main Theme');
+                            audFour.play();
+                            songBool=2;
+                        }else if(ranSong==5){ 
+                            $('.songArtist').text('Ninja Gainden');
+                            $('.songTitle').text('An Easy Enemy');
+                            audFive.play();
+                            songBool=2;
+                        }else if(ranSong==6){ 
+                            $('.songArtist').text('Binding of Isaac');
+                            $('.songTitle').text('Basement Theme');
+                            audSix.play();
+                            songBool=2;
+                        }else if(ranSong==7){ 
+                            $('.songArtist').text('Blinx the Time Sweeper');
+                            $('.songTitle').text('Hourglass Caves');
+                            audSeven.play();
+                            songBool=2;
+                        }
+                    }else if(songBool==0){
+                        this.audOne.paused();
+                        audOne.currentTime=0;
+                        this.audTwo.paused();
+                        audTwo.currentTime=0;
+                        this.audThree.paused();
+                        audThree.currentTime=0;
+                    }
+                    
+                });
+            }

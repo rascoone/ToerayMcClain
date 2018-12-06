@@ -269,12 +269,57 @@
         </p>
 -->
 
-             <audio autoplay>
-	<source src="audio/impossible.mp4">
-    <source src="audio/bloodstain.mp3">
-    <source src="audio/BossyTears.mp3">
+<!--
+             <audio class="songOne">
+	           <source src="audio/impossible.mp4" class="songOne" id="song">
+            </audio>
+-->
+<!--
+            <audio autoplay class="songTwo">
+                <source src="audio/bloodstain.mp3" class="songTwo">
+            </audio>
+            <audio autoplay class="songThree">
+                <source src="audio/BossyTears.mp3" class="songThree">
+            </audio>
+-->
                  
-</audio>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+    
+                chooseSong();
+                
+    
+                $(window).resize(function(){ 
+       
+            });
+                $(window).scroll(function(){ 
+        
+            });
+    
+            });
+            function chooseSong(){
+//                $(document).ready(function(){
+                    var audOne = new Audio("audio/impossible.mp4");
+                    var audTwo = new Audio("audio/bloodstain.mp3");
+                    var audThree = new Audio("audio/BossyTears.mp3");
+                    var ranSong = Math.floor((Math.random()*3)+1);
+                    console.log(ranSong);
+                    if(ranSong==1){
+                        audOne.play();
+                    }else if(ranSong==2){
+                       audTwo.play(); 
+                    }else if(ranSong==3){
+                       audThree.play(); 
+                    }
+//                });
+            }
+        </script>
     </body>
 
 <!--    file:///Users/soa1/Documents/GitHub/web18-pm/index.html-->
