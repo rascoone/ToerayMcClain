@@ -408,7 +408,7 @@ function chooseSong(){
 //        var audSeven = new Audio("imgs/HourGlassCaves.mp3");
     
                 $('#playButton').click(function(){                   
-                    var ranSong = Math.floor((Math.random()*7)+1);
+                    var ranSong = Math.floor((Math.random()*10)+1);
 //                    var ranSong = 1;
                     console.log(ranSong);
                     console.log('before: ' + songBool);
@@ -466,6 +466,24 @@ function chooseSong(){
 //                            audSeven.play();
                             document.getElementById('playerSeven').play();
 //                            songBool=2;
+                        }else if(ranSong==8){ 
+                            $('.songArtist').text('Ocarina of Time');
+                            $('.songTitle').text('Gerudo Valley');
+//                            audSeven.play();
+                            document.getElementById('playerEight').play();
+//                            songBool=2;
+                        }else if(ranSong==9){ 
+                            $('.songArtist').text('Jet Set Radio Future');
+                            $('.songTitle').text('Funky Dealer');
+//                            audSeven.play();
+                            document.getElementById('playerNine').play();
+//                            songBool=2;
+                        }else if(ranSong==10){ 
+                            $('.songArtist').text('Crypt of the Necrodancer');
+                            $('.songTitle').text('Fungal Funk');
+//                            audSeven.play();
+                            document.getElementById('playerTen').play();
+//                            songBool=2;
                         }
                     }else if(songBool==false){
                         $('.songArtist').removeClass('activeWhite');
@@ -478,6 +496,9 @@ function chooseSong(){
                         document.getElementById('playerFive').pause();
                         document.getElementById('playerSix').pause();
                         document.getElementById('playerSeven').pause();
+                        document.getElementById('playerEight').pause();
+                        document.getElementById('playerNine').pause();
+                        document.getElementById('playerTen').pause();
 //                        this.audOne.paused();
 //                        this.audOne.currentTime=0;
 //                        this.audTwo.paused();
@@ -491,6 +512,9 @@ function chooseSong(){
                         document.getElementById('playerFive').currentTime=0;
                         document.getElementById('playerSix').currentTime=0;
                         document.getElementById('playerSeven').currentTime=0;
+                        document.getElementById('playerEight').currentTime=0;
+                        document.getElementById('playerNine').currentTime=0;
+                        document.getElementById('playerTen').currentTime=0;
                         console.log('paused');
                     }
                     
