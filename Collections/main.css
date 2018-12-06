@@ -452,6 +452,8 @@ h4{
     margin-left:25%;
     margin-top:10%;
     opacity:.2;
+    transition:opacity 2s ease;
+    transition:color 2s ease;
 }
 .playImg:hover{
     cursor:pointer;
@@ -468,6 +470,7 @@ h4{
     color:white;
     opacity:.2;
     transition:opacity 2s ease;
+    transition:color 2s ease;
 }
 .songTitle{
     margin:1vw auto;
@@ -476,6 +479,12 @@ h4{
     color:white;
     opacity:.2;
     transition:opacity 2s ease;
+    transition:color 2s ease;
+}
+.activeWhite{
+    opacity:.8;
+    color:indianred;
+    transition:color 2s ease;
 }
 @keyframes bgMoveLeft{
     0%{opacity:0; left:-10vw;}
