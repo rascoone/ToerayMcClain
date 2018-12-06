@@ -49,6 +49,7 @@ function navigate(){
     var sec3=0;
     var sec4=0;
     var sec5=0;
+    var audio = new Audio("imgs/SecretsFound.mp3" ) ;
     var glassTimer=setInterval(hourGlassTimer, 2000);
     $('#aboutChunk').addClass('slideOff');
     $('#homeChunk').addClass('slideOff');
@@ -315,6 +316,8 @@ function navigate(){
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
+             PlaySound('imgs/SecretsFound.mp3');
+             secrets++;
     }
             console.log(sec1 + secrets);
         });
@@ -327,6 +330,8 @@ function navigate(){
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
+             PlaySound('imgs/SecretsFound.mp3');
+             secrets++;
     }
             console.log(sec2 + secrets);
         });
@@ -339,6 +344,8 @@ function navigate(){
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
+             PlaySound('imgs/SecretsFound.mp3');
+             secrets++;
     }
             console.log(sec3 + secrets);
         });
@@ -351,6 +358,8 @@ function navigate(){
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
+             PlaySound('imgs/SecretsFound.mp3');
+             secrets++;
     }
             console.log(sec4 + secrets);
         });
@@ -363,6 +372,9 @@ function navigate(){
         }
          if(secrets==5){
         $('#secretImg').addClass('displayImg');
+            secrets++;
+            PlaySound('imgs/SecretsFound.mp3');
+
     }
             console.log(sec5 + secrets);
         });
@@ -370,6 +382,10 @@ function navigate(){
 }
 function hourGlassTimer(){
     $('#Glass').removeClass('showGlass');
-    
-    
+}
+
+function PlaySound(path) {
+  var audioElement = document.createElement('audio');
+  audioElement.setAttribute('src', path);
+  audioElement.play();
 }

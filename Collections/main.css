@@ -309,7 +309,7 @@ h4{
 .hiddenBox{
     position:absolute;
     background-color:white;
-    opacity:.05;
+    opacity:.04;
     height:5vw;
     width:5vw;
     z-index:10;
@@ -327,7 +327,7 @@ h4{
 #sec2{
     position:fixed;
     top:0px;
-    opacity:.05;
+    opacity:.04;
     left:10vw;
     height:3vw;
     z-index:5;
@@ -373,6 +373,69 @@ h4{
     opacity:1;
     transition:opacity 60s ease;
 }
+.bgBlocks div{
+    position:absolute;
+    width:20vw;
+    height:20vw;
+    top:0;
+    left:0;
+    z-index:-10;
+/*    background-color:white;*/
+    
+}
+.bgBlocks{
+    position:fixed;
+}
+.bgBlocks .blockOne{
+    top:500px;
+    left:100px;
+    animation: bgMoveLeft 10s linear;
+    animation-iteration-count:infinite;
+     width: 0px; height: 0px; border-right: 60px solid transparent; border-top: 60px solid white; border-left: 60px solid white; border-bottom: 60px solid white; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px;
+}
+.bgBlocks .blockTwo{
+    top:200px;
+    left:100px;
+    animation: bgMoveLeft 10s linear;
+    animation-iteration-count:infinite;
+}
+.bgBlocks .blockThree{
+    top:350px;
+    left:100px;
+    animation: bgMoveRight 20s linear;
+    animation-iteration-count:infinite;
+     box-shadow: 0 0 0 1em white, 0 1em 0 1em white, -2.5em 1.5em 0 .5em white, 2.5em 1.5em 0 .5em white, -3em -3em 0 0 white, 3em -3em 0 0 white, -2em -2em 0 0 white, 2em -2em 0 0 white, -3em -1em 0 0 white, -2em -1em 0 0 white, 2em -1em 0 0 white, 3em -1em 0 0 white, -4em 0 0 0 white, -3em 0 0 0 white, 3em 0 0 0 white, 4em 0 0 0 white, -5em 1em 0 0 white, -4em 1em 0 0 red, 4em 1em 0 0 white, 5em 1em 0 0 white, -5em 2em 0 0 red, 5em 2em 0 0 white, -5em 3em 0 0 white, -3em 3em 0 0 red, 3em 3em 0 0 white, 5em 3em 0 0 white, -2em 4em 0 0 white, -1em 4em 0 0 white, 1em 4em 0 0 white, 2em 4em 0 0 white; background: white; width: 1em; height: 1em; overflow: hidden; margin: 50px 0 70px 65px;
+}
+.bgBlocks .blockFour{
+    top:600px;
+    left:100px;
+    animation: bgMoveRight 10s linear;
+    animation-iteration-count:infinite;
+    box-shadow: 0 0 0 1em white, 0 1em 0 1em white, -2.5em 1.5em 0 .5em white, 2.5em 1.5em 0 .5em white, -3em -3em 0 0 white, 3em -3em 0 0 white, -2em -2em 0 0 white, 2em -2em 0 0 white, -3em -1em 0 0 white, -2em -1em 0 0 white, 2em -1em 0 0 white, 3em -1em 0 0 white, -4em 0 0 0 white, -3em 0 0 0 white, 3em 0 0 0 white, 4em 0 0 0 white, -5em 1em 0 0 white, -4em 1em 0 0 red, 4em 1em 0 0 white, 5em 1em 0 0 white, -5em 2em 0 0 red, 5em 2em 0 0 white, -5em 3em 0 0 white, -3em 3em 0 0 red, 3em 3em 0 0 white, 5em 3em 0 0 white, -2em 4em 0 0 white, -1em 4em 0 0 white, 1em 4em 0 0 white, 2em 4em 0 0 white; background: white; width: 1em; height: 1em; overflow: hidden; margin: 50px 0 70px 65px;
+}
+.bgBlocks .blockFive{
+    top:400px;
+    left:100px;
+    animation: bgMoveLeft 20s linear;
+    animation-iteration-count:infinite;
+    width: 0px; height: 0px; border-right: 60px solid transparent; border-top: 60px solid white; border-left: 60px solid white; border-bottom: 60px solid white; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px;
+}
+@keyframes bgMoveLeft{
+    0%{opacity:0; left:-10vw;}
+    20%{opacity:0;}
+    30%{opacity:.05;}
+    70%{opacity:.05;}
+    80%{opacity:0;}
+    100%{opacity:0; left:80vw;}
+}
+@keyframes bgMoveRight{
+    0%{opacity:0; left:100vw;}
+    20%{opacity:0;}
+    30%{opacity:.05;}
+    70%{opacity:.05;}
+    80%{opacity:0;}
+    100%{opacity:0; left:20vw;}
+}
 @keyframes goOff{
     from{left:25vw; opacity:1;}
     to{left:-400%;}
@@ -384,13 +447,13 @@ h4{
 @keyframes blinkSec{
     0%{opacity:.005;}
     95%{opacity:.005;}
-    99%{opacity:.1;}
+    99%{opacity:.04;}
     100%{opacity:.005;}
 }
 @keyframes moveSecUp{
     0%{top:100%;}
-    10%{opacity:.05;}
-    90%{opacity:.05;}
+    10%{opacity:.04;}
+    90%{opacity:.04;}
     100%{top:0%; opacity:0;}
 }
 @keyframes moveSecLeft{
@@ -410,7 +473,7 @@ h4{
 }
 @media only screen and (max-width: 1440px) {
     body{
-        background-color:slategray;
+        background-color:black;
     }
     #homeChunk{
     position:absolute;
@@ -519,6 +582,9 @@ h4{
     .seekregrets{
         display:none;
     }
+    .bgBlocks{
+/*        display:none;*/
+    }
     .AllContaining{
         width:70vw;
     }
@@ -563,7 +629,7 @@ h4{
 }
 @media only screen and (max-width: 650px) {
     body{
-        background-color:black;
+        background-color:slategray;
     }
     .AllContainer{
             width:70vw;
