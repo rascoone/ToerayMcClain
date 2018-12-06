@@ -76,14 +76,7 @@ body{
     z-index:2;
     background-color:white;
 }
-@keyframes goOff{
-    from{left:25vw; opacity:1;}
-    to{left:-400%;}
-}
-@keyframes comeOn{
-    from{left:150%;}
-    to{left:25vw;opacity:1;}
-}
+
 .navP{
     position:relative;
     float:left;
@@ -380,6 +373,14 @@ h4{
     opacity:1;
     transition:opacity 60s ease;
 }
+@keyframes goOff{
+    from{left:25vw; opacity:1;}
+    to{left:-400%;}
+}
+@keyframes comeOn{
+    from{left:150%;}
+    to{left:25vw;opacity:1;}
+}
 @keyframes blinkSec{
     0%{opacity:.005;}
     95%{opacity:.005;}
@@ -409,7 +410,7 @@ h4{
 }
 @media only screen and (max-width: 1440px) {
     body{
-        background-color:gray;
+        background-color:slategray;
     }
     #homeChunk{
     position:absolute;
@@ -446,22 +447,65 @@ h4{
     body{
         background-color:slategray;
     }
+    .entry{
+    width:60vw;
+    height:20vw;
+}
     h4{
         display:none;
     }
+    .whiteBar{
+        height:6vw;
+    }
     .navBar{
-/*        top:10px;*/
-        left:20vw;
+        top:5px;
+        width:100vw;
+        left:-3vw;
         margin:.5% auto;
     }
     .navP{
-        left:7vw;
+        left:8vw;
+        font-size:2.5vw;
     }
     .slant{
+        
         width:.5vw;
+        font-size:2.5vw;
+    }
+    h1{  
+        
+    }
+    .homeAechOne{
+        line-height:12vw;
+        left:1vw;
+         top:15vw;
+        z-index:2;
+        font-size:10vw;
+        width:100vw;
+         text-align:center;
+        font-family: 'Press Start 2P', cursive;
+        animation:comeOnHome 2s ease;
+        animation-fill-mode:forwards;
     }
     h3{
         display:none;
+    }
+    .selfie{
+        width:60%;
+        height:100%;
+        left:9%;
+    }
+    .aboutTop{
+        top:100%;
+        left:-130%;
+        font-size:160%;
+    }
+    .aboutDescript{
+/*        top:400%;*/
+        margin-top:75%;
+        font-size:150%;
+        left:-130%;
+        width:80%;
     }
     .hiddenBox{
         display:none;
@@ -478,17 +522,43 @@ h4{
     .AllContaining{
         width:70vw;
     }
+    .entImg{
+        width:90%;
+    }
     .entImg img{
-    margin-top:20%;
+        left:20%;
+    margin-top:2%;
 }
-    
+    .entImg P{
+        top:10px;
+        width:100%;
+        left:-57%;
+        margin-bottom:20px;
+    }
+    .homePic{
+        position:fixed;
+        top:-10vw;
+        left:-15vw;
+        width:120vw;
+        height:200vw;
+        margin:none;
+        opacity:.3;
+        
+    } 
     #homeChunk{
     position:absolute;
     left:15.5%;
 }
+    .aboutDescript{
+        top:90px;
+    }
     @keyframes comeOn{
     from{left:150%;}
-    to{left:25vw;opacity:1;}
+    to{left:20vw;opacity:1;}
+}
+    @keyframes comeOnHome{
+    from{left:150%;}
+    to{left:1vw;opacity:1;}
 }
 }
 @media only screen and (max-width: 650px) {
@@ -499,30 +569,62 @@ h4{
             width:70vw;
     }
     .navBar{
-        font-size:40%;
-/*        left:0;*/
+/*        font-size:40%;*/
+/*        left:9vw;*/
+        margin:0 auto;
+        margin-left:10vw;
+        width:100vw;
+    }
+    .whiteBar{
+        height:6vw;
     }
     .slant{
-        font-size:14px;
-/*        left:0;*/
+        font-size:4vw;
+/*        left:-20%;*/
+    }
+    .navP{
+        top:2vw;
+        left:8vw;
+        font-size:1.5vw;
     }
     h1{
+        top:40px;
+        font-size:5vw;
 /*        left:0%;*/
 /*        text-align:left;*/
+    }
+    .aboutTop{
+        font-size:130%;
+    }
+    .aboutDescript{
+/*        top:400%;*/
+        margin-top:80%;
+        font-size:110%;
+    }
+    .homeAechOne{
+        line-height:12vw;
+        left:1vw;
+         top:15vw;
+        z-index:2;
+        font-size:10vw;
+        width:100vw;
+         text-align:center;
+        font-family: 'Press Start 2P', cursive;
+        animation:comeOnHome 2s ease;
+        animation-fill-mode:forwards;
     }
     #homeChunk{
     margin:0;
     left:0;
     transition:left 1s ease; 
 }
-    .homePic{
-        width:40%x;
-        height:20%;
-        left:25vw;
-        margin:none;
-    }
+
     @keyframes comeOn{
     from{left:150%;}
-    to{left:25vw;opacity:1;}
+    to{left:20vw;opacity:1;}
+}
+     @keyframes comeOnHome{
+    from{left:150%;}
+    to{left:1vw;opacity:1;}
 }
 }

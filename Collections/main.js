@@ -13,6 +13,9 @@ $(document).ready(function(){
 });
 
 function navigate(){
+    $(document).ready(function(){
+    $(this).scrollTop(0);
+});
     $(document).ready(function() {
     var loadScreenImg = Math.floor((Math.random()*10)+1);
     console.log(loadScreenImg);
@@ -62,8 +65,10 @@ function navigate(){
      $('#chunkNine').addClass('slideOff');
      $('#chunkTen').addClass('slideOff');
     $('#homeChunk').addClass('comeOn');
+    $('h1').addClass('homeAechOne');
     
         $('#homie').click(function(){ 
+            window.scrollTo(0, 0);
             $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
              $('#aboot').removeClass('youAreHere');
@@ -77,6 +82,7 @@ function navigate(){
             $('#aboutChunk').removeClass('comeOn');
             $('#homeChunk').addClass('comeOn');
             $('h1').text('SHOWING MY AGE WITH GAMING');
+            $('h1').addClass('homeAechOne');
             $('body').removeClass('scrollBars');
             $('#chunkOne').removeClass('comeOn');
             $('#chunkOne').addClass('slideOff');
@@ -116,6 +122,7 @@ function navigate(){
             $('#aboutChunk').removeClass('comeOn');
             $('#detailsChunk').addClass('comeOn');
             $('h1').text('SHOWING MY AGE WITH GAMING');
+            $('h1').removeClass('homeAechOne');
             $('body').addClass('scrollBars');
             $('#chunkOne').addClass('slideOff');
             $('#chunkOne').removeClass('comeOn');
@@ -140,6 +147,7 @@ function navigate(){
             console.log('clicked');
         });
          $('#aboot').click(function(){ 
+             window.scrollTo(0, 0);
              $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -154,6 +162,7 @@ function navigate(){
              $('#details2Chunk').removeClass('comeOn');
             $('#aboutChunk').addClass('comeOn');
              $('h1').text('MY COLLECTION\'S INFLUENCE');
+             $('h1').removeClass('homeAechOne');
              $('body').removeClass('scrollBars');
              $('#chunkOne').removeClass('comeOn');
             $('#chunkOne').addClass('slideOff');
@@ -179,6 +188,7 @@ function navigate(){
         });
         
         $('#gameOne').click(function(){ 
+            window.scrollTo(0, 0);
             $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -189,6 +199,7 @@ function navigate(){
             console.log('clicked');
         });
         $('#gameTwo').click(function(){ 
+            window.scrollTo(0, 0);
             $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -200,6 +211,7 @@ function navigate(){
             console.log('clicked');
         });
         $('#gameThree').click(function(){ 
+            window.scrollTo(0, 0);
             $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -211,6 +223,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameFour').click(function(){ 
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -222,6 +235,7 @@ function navigate(){
             console.log('clicked');
         });
        $('#gameFive').click(function(){ 
+           window.scrollTo(0, 0);
            $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -233,6 +247,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameSix').click(function(){ 
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -244,6 +259,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameSeven').click(function(){ 
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -254,7 +270,8 @@ function navigate(){
             $('#chunkSeven').addClass('comeOn');   
             console.log('clicked');
         });
-    $('#gameEight').click(function(){ 
+    $('#gameEight').click(function(){
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -266,6 +283,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameNine').click(function(){ 
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
@@ -277,6 +295,7 @@ function navigate(){
             console.log('clicked');
         });
     $('#gameTen').click(function(){ 
+        window.scrollTo(0, 0);
         $('#Glass').removeClass('showGlass');
             $('#Glass').addClass('showGlass');
             glassTimer;
